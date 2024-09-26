@@ -1,0 +1,38 @@
+import 'package:tf_ecommerce/SRC/Domain/Models/CountryModel/country_model.dart';
+
+class AllCountries {
+  static final List<CountryModel> allCountries = [
+    CountryModel('United States', ['New York', 'Los Angeles', 'Chicago']),
+    CountryModel('Canada', ['Toronto', 'Vancouver', 'Montreal']),
+    CountryModel('India', ['Delhi', 'Mumbai', 'Bangalore']),
+    CountryModel('Brazil', ['São Paulo', 'Rio de Janeiro', 'Brasília']),
+    CountryModel('China', ['Beijing', 'Shanghai', 'Guangzhou']),
+    CountryModel('Russia', ['Moscow', 'Saint Petersburg', 'Novosibirsk']),
+    CountryModel('Pakistan', ['KPK', 'Punjab', 'Sindh']),
+    CountryModel('India', ['KPK', 'Punjab', 'Sindh']),
+    CountryModel('United States', ['New York', 'Los Angeles', 'Chicago']),
+    CountryModel('Canada', ['Toronto', 'Vancouver', 'Montreal']),
+    CountryModel('India', ['Delhi', 'Mumbai', 'Bangalore']),
+    CountryModel('Brazil', ['São Paulo', 'Rio de Janeiro', 'Brasília']),
+    CountryModel('China', ['Beijing', 'Shanghai', 'Guangzhou']),
+    CountryModel('Russia', ['Moscow', 'Saint Petersburg', 'Novosibirsk']),
+    CountryModel('Pakistan', ['KPK', 'Punjab', 'Sindh']),
+    CountryModel('India', ['KPK', 'Punjab', 'Sindh']),
+    CountryModel('United States', ['New York', 'Los Angeles', 'Chicago']),
+    CountryModel('Canada', ['Toronto', 'Vancouver', 'Montreal']),
+    CountryModel('India', ['Delhi', 'Mumbai', 'Bangalore']),
+    CountryModel('Brazil', ['São Paulo', 'Rio de Janeiro', 'Brasília']),
+    CountryModel('China', ['Beijing', 'Shanghai', 'Guangzhou']),
+    CountryModel('Russia', ['Moscow', 'Saint Petersburg', 'Novosibirsk']),
+    CountryModel('Pakistan', ['KPK', 'Punjab', 'Sindh']),
+    CountryModel('India', ['KPK', 'Punjab', 'Sindh']),
+    CountryModel('United States', ['New York', 'Los Angeles', 'Chicago']),
+    CountryModel('Canada', ['Toronto', 'Vancouver', 'Montreal']),
+    CountryModel('India', ['Delhi', 'Mumbai', 'Bangalore']),
+    CountryModel('Brazil', ['São Paulo', 'Rio de Janeiro', 'Brasília']),
+    CountryModel('China', ['Beijing', 'Shanghai', 'Guangzhou']),
+    CountryModel('Russia', ['Moscow', 'Saint Petersburg', 'Novosibirsk']),
+    CountryModel('Pakistan', ['KPK', 'Punjab', 'Sindh']),
+    CountryModel('India', ['KPK', 'Punjab', 'Sindh']),
+  ];
+}
