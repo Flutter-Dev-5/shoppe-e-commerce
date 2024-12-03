@@ -32,7 +32,7 @@ class SmallButton extends StatelessWidget {
                   ? Theme.of(context)
                       .textTheme
                       .bodyMedium!
-                      .copyWith(color: LightColors().commonButtonColor)
+                      .copyWith(color: LightColors.commonButtonColor)
                   : Theme.of(context).textTheme.bodyMedium,
             ),
           ),

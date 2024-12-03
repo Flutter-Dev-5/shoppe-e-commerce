@@ -5,6 +5,7 @@ class Splashscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SizedBox(
@@ -12,26 +13,22 @@ class Splashscreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              170.h,
               const ContainerIcon(),
-              40.h,
-              AppText(
-                text: AppStrings.shoppe,
-                style: Theme.of(context).textTheme.headlineLarge,
-              ),
-              20.h,
+              30.h,
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: AppText(
-                  text: AppStrings.beautifulECommerce,
-                  style: Theme.of(context).textTheme.headlineSmall,
+                  text: AppStrings.goodServiceSiden1975,
+                  style: theme.textTheme.headlineSmall,
                   textAlign: TextAlign.center,
                   maxLines: 2,
                 ),
               ),
-              80.h,
+              150.h,
               CommonButton(
+                color: theme.primaryColorDark,
                 onTap: () {
                   Navigator.pushReplacement(
                       context,
@@ -50,6 +47,7 @@ class Splashscreen extends StatelessWidget {
                   ),
                   10.w,
                   ArrowForward(
+                    color: LightColors.borderShadowColor,
                     onTap: () {
                       // context.pushReplacement(
                       //   const SignInScreen(),

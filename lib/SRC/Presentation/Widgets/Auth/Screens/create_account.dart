@@ -5,12 +5,13 @@ class CreateAccount extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       body: SizedBox(
           height: double.infinity,
           child: Stack(
             children: [
-              const BubbleThree(),
+              // const BubbleThree(),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 23),
                 child: SingleChildScrollView(
@@ -18,15 +19,15 @@ class CreateAccount extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      100.h,
+                      80.h,
                       AppText(
                         text: AppStrings.createAccount,
-                        style: Theme.of(context).textTheme.headlineLarge,
+                        style: theme.textTheme.headlineLarge,
                         maxLines: 2,
                       ),
-                      30.h,
-                      const CameraContainer(),
-                      40.h,
+                      // 30.h,
+                      // const CameraContainer(),
+                      80.h,
                       CustomTextField(
                         hintText: AppStrings.emailAddress,
                         controller: TextEditingController(),
@@ -44,16 +45,32 @@ class CreateAccount extends StatelessWidget {
                       ),
                       20.h,
                       CommonButton(
+                        // color: ,
                         onTap: () {
                           context.pushReplacement(const SignInScreen());
                         },
                         text: AppStrings.done,
                       ),
-                      30.h,
+                      10.h,
+                      Center(
+                          child: AppText(
+                        text: AppStrings.or,
+                        style: theme.textTheme.displayMedium,
+                      )),
+                      10.h,
+
+                      CommonButton(
+                        color: theme.indicatorColor,
+                        onTap: () {
+                          context.pushReplacement(const SignInScreen());
+                        },
+                        text: "Register deg Med",
+                      ),
+                      10.h,
                       Center(
                           child: AppText(
                         text: AppStrings.cancel,
-                        style: Theme.of(context).textTheme.bodyMedium,
+                        style: theme.textTheme.bodyMedium,
                       ))
                     ],
                   ),

@@ -16,7 +16,7 @@ class CommonButton extends StatelessWidget {
     this.isLimitReached = false,
     this.fontSize = 19,
     this.borderRadius = 15,
-    this.color = const Color(0xff004CFF),
+    this.color = LightColors.primaryColorDark,
   });
 
   @override

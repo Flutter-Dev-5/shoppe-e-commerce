@@ -17,8 +17,14 @@ class ContainerIcon extends StatelessWidget {
                 color: Theme.of(context).cardColor.withOpacity(0.1),
                 blurRadius: 8),
           ]),
-      child: SvgPicture.asset(shoppingBagIconSvg,
-          width: 81.4, height: 92, fit: BoxFit.scaleDown),
+      child: Center(
+        child: AppText(
+          text: "Tvete",
+          style: Theme.of(context).textTheme.displayLarge!.copyWith(
+                fontSize: 40,
+              ),
+        ),
+      ),
     );
   }
 }

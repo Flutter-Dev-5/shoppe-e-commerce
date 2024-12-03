@@ -1,9 +1,11 @@
 class AppStrings {
   // New App Strings
   static const String login = "Login";
-
+  static const String goodServiceSiden1975 = "Good Service Siden 1975";
   static const String createAccount = "Create Account";
   static const String shoppe = "Shoppe";
+  static const String or = "or";
+
   static const String beautifulECommerce =
       "Beautiful eCommerce UI Kit for your online store";
   static const String getStarted = "Let's get Started";

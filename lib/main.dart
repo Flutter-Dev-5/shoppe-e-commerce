@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           themeMode: value,
           theme: AppTheme().lightTheme(),
           darkTheme: AppTheme().darkThemeData(),
-          home: CreateAccount(),
+          home: Splashscreen(),
           // home: SizedBox(
           //   height: 200,
           //   child: VoucherContainer(),
