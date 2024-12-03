@@ -110,7 +110,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                     size: 30,
                                   ),
                                 ),
-                                5.w,
+                                5.x,
                                 const DisplayImage(
                                   imageAddress: categoriesPNG,
                                   imageHeight: 25,

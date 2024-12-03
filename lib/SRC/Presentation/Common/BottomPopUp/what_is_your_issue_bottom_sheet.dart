@@ -12,7 +12,7 @@ class UserQuestionsBottomSheet {
               builder: (context, index, child) {
                 return Column(
                   children: [
-                    10.h,
+                    10.y,
                     SizedBox(
                       height: size.height * 0.35,
                       child: ListView.builder(
@@ -26,7 +26,7 @@ class UserQuestionsBottomSheet {
                                   selectedIndex: selectedIndex,
                                   indexOf: index,
                                 ),
-                                5.h,
+                                5.y,
                               ],
                             );
                           }),
@@ -48,7 +48,7 @@ class UserQuestionsBottomSheet {
                               borderRadius: 10,
                             ),
                           ),
-                          10.w,
+                          10.x,
                           ExitButtonContainer(
                             onTap: () {
                               context.back();
@@ -78,7 +78,7 @@ class UserQuestionsBottomSheet {
               builder: (context, index, child) {
                 return Column(
                   children: [
-                    10.h,
+                    10.y,
                     SizedBox(
                       height: size.height * 0.35,
                       child: ListView.builder(
@@ -92,7 +92,7 @@ class UserQuestionsBottomSheet {
                                   selectedIndex: selectedIndex,
                                   indexOf: index,
                                 ),
-                                5.h,
+                                5.y,
                               ],
                             );
                           }),
@@ -117,7 +117,7 @@ class UserQuestionsBottomSheet {
                               borderRadius: 10,
                             ),
                           ),
-                          10.w,
+                          10.x,
                           ExitButtonContainer(
                             onTap: () {
                               context.back();
@@ -148,7 +148,7 @@ class UserQuestionsBottomSheet {
               builder: (context, index, child) {
                 return Column(
                   children: [
-                    10.h,
+                    10.y,
                     SizedBox(
                       height: size.height * 0.35,
                       child: ListView.builder(
@@ -162,7 +162,7 @@ class UserQuestionsBottomSheet {
                                   selectedIndex: selectedIndex,
                                   indexOf: index,
                                 ),
-                                5.h,
+                                5.y,
                               ],
                             );
                           }),
@@ -182,7 +182,7 @@ class UserQuestionsBottomSheet {
                               borderRadius: 10,
                             ),
                           ),
-                          10.w,
+                          10.x,
                           ExitButtonContainer(
                             onTap: () {
                               context.back();

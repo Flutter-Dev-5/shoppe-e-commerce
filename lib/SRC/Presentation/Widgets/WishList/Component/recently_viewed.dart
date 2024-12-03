@@ -9,7 +9,7 @@ class RecentlyViewedWishList extends StatelessWidget {
     final theme = Theme.of(context);
     return Column(
       children: [
-        60.h,
+        60.y,
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -20,7 +20,7 @@ class RecentlyViewedWishList extends StatelessWidget {
             ArrowForward(onTap: () {}),
           ],
         ),
-        10.h,
+        10.y,
         SizedBox(
           height: 60,
           child: ListView.builder(
@@ -38,7 +38,7 @@ class RecentlyViewedWishList extends StatelessWidget {
                             CircularListData.circularData[index].productImage,
                       ),
                     ),
-                    5.w,
+                    5.x,
                   ],
                 );
               }),

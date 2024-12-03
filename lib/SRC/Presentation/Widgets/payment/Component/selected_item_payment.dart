@@ -13,7 +13,7 @@ class SelectedItemOfPaymentDetails extends StatelessWidget {
     final theme = Theme.of(context);
     return Column(
       children: [
-        5.h,
+        5.y,
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -23,7 +23,7 @@ class SelectedItemOfPaymentDetails extends StatelessWidget {
                   text: AppStrings.items,
                   style: theme.textTheme.displayMedium,
                 ),
-                10.w,
+                10.x,
                 Container(
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
@@ -73,7 +73,7 @@ class SelectedItemOfPaymentDetails extends StatelessWidget {
             ),
           ],
         ),
-        5.h,
+        5.y,
         SizedBox(
           height: itemCount > 2 ? 200 : 140,
           child: ListView.builder(
@@ -112,7 +112,7 @@ class SelectedItemOfPaymentDetails extends StatelessWidget {
                             ))
                       ],
                     ),
-                    5.w,
+                    5.x,
                     Flexible(
                       flex: 3,
                       child: AppText(

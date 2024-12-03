@@ -26,7 +26,7 @@ class ShippingAddress extends StatelessWidget {
                   text: AppStrings.shippingAddress,
                   style: theme.textTheme.labelMedium,
                 ),
-                5.h,
+                5.y,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -44,7 +44,7 @@ class ShippingAddress extends StatelessWidget {
                         ),
                       ],
                     )),
-                    10.w,
+                    10.x,
                     EditButton(onTap: () {
                       CustomNewBottomSheet.customBottomSheet(EditAddressTile(),
                           AppStrings.shippingAddress, context, 0.7, false);

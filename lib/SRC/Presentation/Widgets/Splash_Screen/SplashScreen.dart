@@ -14,9 +14,9 @@ class Splashscreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
-              170.h,
+              170.y,
               const ContainerIcon(),
-              30.h,
+              30.y,
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: AppText(
@@ -26,7 +26,7 @@ class Splashscreen extends StatelessWidget {
                   maxLines: 2,
                 ),
               ),
-              150.h,
+              150.y,
               CommonButton(
                 color: theme.primaryColorDark,
                 onTap: () {
@@ -37,7 +37,7 @@ class Splashscreen extends StatelessWidget {
                 },
                 text: AppStrings.getStarted,
               ),
-              30.h,
+              30.y,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -45,7 +45,7 @@ class Splashscreen extends StatelessWidget {
                     text: AppStrings.alreadyHaveAccount,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
-                  10.w,
+                  10.x,
                   ArrowForward(
                     color: LightColors.borderShadowColor,
                     onTap: () {

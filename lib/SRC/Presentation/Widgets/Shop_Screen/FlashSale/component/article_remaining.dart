@@ -18,7 +18,7 @@ class ArticleRemaining extends StatelessWidget {
               style: theme.textTheme.labelSmall!
                   .copyWith(fontWeight: FontWeight.w400),
             ),
-            5.h,
+            5.y,
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: DisplayImage(

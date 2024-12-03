@@ -38,7 +38,7 @@ class PaymentMethodSetting extends StatelessWidget {
                         text: AppStrings.setting,
                         style: theme.textTheme.displayMedium,
                       ),
-                      10.h,
+                      10.y,
                       AppText(
                         text: AppStrings.paymentMethod,
                         style: theme.textTheme.titleSmall!.copyWith(
@@ -52,7 +52,7 @@ class PaymentMethodSetting extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      20.h,
+                      20.y,
                       SizedBox(height: 200, child: SelectPaymentMethodCard()),
                     ],
                   ),
@@ -82,7 +82,7 @@ class PaymentMethodSetting extends StatelessWidget {
                                         imageHeight: 25,
                                         imageWidth: 25,
                                       ),
-                                      10.w,
+                                      10.x,
                                       Column(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
@@ -93,7 +93,7 @@ class PaymentMethodSetting extends StatelessWidget {
                                             text: "April,20 2022 12:21",
                                             style: theme.textTheme.titleSmall,
                                           ),
-                                          5.h,
+                                          5.y,
                                           AppText(
                                             text:
                                                 "${AppStrings.ordered} #75938573984",
@@ -113,7 +113,7 @@ class PaymentMethodSetting extends StatelessWidget {
                               ),
                             ),
                           ),
-                          10.h,
+                          10.y,
                         ],
                       );
                     })

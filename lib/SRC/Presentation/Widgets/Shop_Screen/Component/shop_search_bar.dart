@@ -8,14 +8,14 @@ class ShopSearchBar extends StatelessWidget {
     final theme = Theme.of(context);
     return Column(
       children: [
-        10.h,
+        10.y,
         Row(
           children: [
             AppText(
               text: AppStrings.shop,
               style: theme.textTheme.displayLarge,
             ),
-            10.w,
+            10.x,
             Flexible(
               child: TextField(
                 decoration: InputDecoration(

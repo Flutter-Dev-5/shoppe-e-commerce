@@ -58,7 +58,7 @@ class _PaymentLoadingDialogState extends State<PaymentLoadingDialog> {
                             textAlign: TextAlign.center,
                           ),
                         ),
-                  30.h,
+                  30.y,
                   if (widget.isLoadingData == true)
                     Column(
                       children: [
@@ -66,14 +66,14 @@ class _PaymentLoadingDialogState extends State<PaymentLoadingDialog> {
                           text: AppStrings.paymentInProgress,
                           style: theme.textTheme.displayMedium,
                         ),
-                        5.h,
+                        5.y,
                         AppText(
                           text: AppStrings.pleaseWaitAFewMoments,
                           style: theme.textTheme.titleSmall!.copyWith(
                             fontSize: 12,
                           ),
                         ),
-                        40.h
+                        40.y
                       ],
                     )
                 ],

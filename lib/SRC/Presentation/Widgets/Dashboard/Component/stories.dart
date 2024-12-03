@@ -13,12 +13,12 @@ class Stories extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            10.h,
+            10.y,
             AppText(
               text: AppStrings.stories,
               style: theme.textTheme.displayMedium,
             ),
-            10.h,
+            10.y,
             Expanded(
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,

@@ -34,7 +34,7 @@ class NewItemsTile extends StatelessWidget {
                       )),
                 ),
               ),
-              2.h,
+              2.y,
               SizedBox(
                 height: 25,
                 child: AppText(
@@ -43,7 +43,7 @@ class NewItemsTile extends StatelessWidget {
                   maxLines: 2,
                 ),
               ),
-              2.h,
+              2.y,
               AppText(
                 text: "\$ $productPrice",
                 style: Theme.of(context).textTheme.titleMedium,
@@ -51,7 +51,7 @@ class NewItemsTile extends StatelessWidget {
             ],
           ),
         ),
-        2.w,
+        2.x,
       ],
     );
   }

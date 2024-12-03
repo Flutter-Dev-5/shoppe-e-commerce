@@ -24,12 +24,12 @@ class ForgotPassword extends StatelessWidget {
                   height: size.height * 0.2,
                 ),
                 const ProfileImage(),
-                20.h,
+                20.y,
                 AppText(
                   text: AppStrings.passwordRecovery,
                   style: Theme.of(context).textTheme.displayMedium,
                 ),
-                20.h,
+                20.y,
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30),
                   child: AppText(
@@ -39,7 +39,7 @@ class ForgotPassword extends StatelessWidget {
                     maxLines: 2,
                   ),
                 ),
-                40.h,
+                40.y,
                 ValueListenableBuilder(
                     valueListenable: isSelect,
                     builder: (context, selected, child) {
@@ -53,7 +53,7 @@ class ForgotPassword extends StatelessWidget {
                               isSelect.value = index;
                             },
                           ),
-                          20.h,
+                          20.y,
                           RecoveryTypeContainer(
                             text: AppStrings.emailAddress,
                             isSelected: isSelect,
@@ -65,7 +65,7 @@ class ForgotPassword extends StatelessWidget {
                         ],
                       );
                     }),
-                60.h,
+                60.y,
                 CommonButton(
                   onTap: () {
                     context.to(const PasswordRecoveryCode());
@@ -76,7 +76,7 @@ class ForgotPassword extends StatelessWidget {
                   },
                   text: AppStrings.next,
                 ),
-                40.h,
+                40.y,
                 AppText(
                   onTap: () {
                     Navigator.pushReplacement(

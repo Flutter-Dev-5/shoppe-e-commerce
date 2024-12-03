@@ -10,13 +10,13 @@ class CategoriesGrid extends StatelessWidget {
     return SizedBox(
       child: Column(
         children: [
-          10.h,
+          10.y,
           HeadingRow(
             firstText: AppStrings.categories,
             nextText: AppStrings.seeAll,
             onTap: () {},
           ),
-          10.h,
+          10.y,
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: GridView.builder(

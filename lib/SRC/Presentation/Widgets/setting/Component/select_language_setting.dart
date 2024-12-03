@@ -28,14 +28,14 @@ class SelectLanguageSetting extends StatelessWidget {
                         text: AppStrings.setting,
                         style: theme.textTheme.displayMedium,
                       ),
-                      10.h,
+                      10.y,
                       AppText(
                         text: AppStrings.language,
                         style: theme.textTheme.titleSmall!.copyWith(
                           fontSize: 14,
                         ),
                       ),
-                      20.h,
+                      20.y,
                       LanguageContainerSetting(
                         selectedLanguage: selectedLanguage,
                         title: "English",
@@ -44,7 +44,7 @@ class SelectLanguageSetting extends StatelessWidget {
                           selectedLanguage.value = 1;
                         },
                       ),
-                      10.h,
+                      10.y,
                       LanguageContainerSetting(
                         selectedLanguage: selectedLanguage,
                         title: "Français",
@@ -53,7 +53,7 @@ class SelectLanguageSetting extends StatelessWidget {
                           selectedLanguage.value = 2;
                         },
                       ),
-                      10.h,
+                      10.y,
                       LanguageContainerSetting(
                         selectedLanguage: selectedLanguage,
                         title: "Русский",
@@ -62,7 +62,7 @@ class SelectLanguageSetting extends StatelessWidget {
                           selectedLanguage.value = 3;
                         },
                       ),
-                      10.h,
+                      10.y,
                       LanguageContainerSetting(
                         selectedLanguage: selectedLanguage,
                         title: "Tiếng Việt ",
@@ -71,7 +71,7 @@ class SelectLanguageSetting extends StatelessWidget {
                           selectedLanguage.value = 4;
                         },
                       ),
-                      10.h,
+                      10.y,
                     ],
                   );
                 })),

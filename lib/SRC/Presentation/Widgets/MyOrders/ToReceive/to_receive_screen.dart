@@ -20,11 +20,11 @@ class ToReceivedScreen extends StatelessWidget {
       child: Scaffold(
         body: Column(
           children: [
-            10.h,
+            10.y,
             const CustomAppBar(
               isHomePage: false,
             ),
-            15.h,
+            15.y,
             Expanded(
               child: ListView.builder(
                   itemCount: ToReceivedOrderData.ordersDetailsList.length,
@@ -65,7 +65,7 @@ class ToReceivedScreen extends StatelessWidget {
                                                 fontWeight: FontWeight.w400,
                                                 fontSize: 14),
                                       ),
-                                      10.h,
+                                      10.y,
                                       ToReceivedOrderData
                                                   .ordersDetailsList[index]
                                                   .statusOfOrder ==
@@ -118,7 +118,7 @@ class ToReceivedScreen extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                    20.h,
+                                    20.y,
                                     ToReceivedOrderData.ordersDetailsList[index]
                                                 .statusOfOrder ==
                                             AppStrings.delivered
@@ -185,7 +185,7 @@ class ToReceivedScreen extends StatelessWidget {
                                                                           maxLines:
                                                                               2,
                                                                         ),
-                                                                        10.h,
+                                                                        10.y,
                                                                         AppText(
                                                                           text:
                                                                               "Order #${ToReceivedOrderData.ordersDetailsList[index].orderNumber}",
@@ -194,7 +194,7 @@ class ToReceivedScreen extends StatelessWidget {
                                                                               .labelMedium!
                                                                               .copyWith(fontWeight: FontWeight.w500, fontSize: 14),
                                                                         ),
-                                                                        20.h,
+                                                                        20.y,
                                                                         Row(
                                                                           children: [
                                                                             Container(
@@ -210,7 +210,7 @@ class ToReceivedScreen extends StatelessWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            10.w,
+                                                                            10.x,
                                                                             SizedBox(
                                                                               height: 30,
                                                                               width: size.width * 0.2,

@@ -37,7 +37,7 @@ class ViewAllReviews extends StatelessWidget {
                               context.back();
                             },
                             icon: Icon(Icons.arrow_back_ios)),
-                        10.w,
+                        10.x,
                         AppText(
                           text: AppStrings.reviews,
                           style: theme.textTheme.displayLarge,
@@ -63,7 +63,7 @@ class ViewAllReviews extends StatelessWidget {
                                   .reviewData[index].userName,
                               commentMaxLines: 5,
                             ),
-                            10.h,
+                            10.y,
                           ],
                         );
                       })

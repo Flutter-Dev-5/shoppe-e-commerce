@@ -29,7 +29,7 @@ class PieChartOfMonth extends StatelessWidget {
               ),
             ),
           ),
-          20.h,
+          20.y,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -57,15 +57,15 @@ class PieChartOfMonth extends StatelessWidget {
               ),
             ],
           ),
-          20.h,
+          20.y,
           const MyActivityProductCost(),
-          20.h,
+          20.y,
           const ActivityProgressCircular(
             ordered: 12,
             received: 7,
             toReceive: 5,
           ),
-          30.h,
+          30.y,
           const OrderButtonMyActivity(),
         ],
       ),

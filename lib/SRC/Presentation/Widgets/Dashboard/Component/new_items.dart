@@ -19,7 +19,7 @@ class NewItems extends StatelessWidget {
               context.to(AllCategoryScreen());
             },
           ),
-          10.h,
+          10.y,
           Expanded(
             child: Padding(
               padding: const EdgeInsets.only(left: 20.0),
@@ -41,7 +41,7 @@ class NewItems extends StatelessWidget {
                   }),
             ),
           ),
-          10.h,
+          10.y,
         ],
       ),
     );

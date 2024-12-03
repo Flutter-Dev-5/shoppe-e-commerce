@@ -21,7 +21,7 @@ class YouMightLikeIt extends StatelessWidget {
             text: text,
             style: Theme.of(context).textTheme.displayMedium,
           ),
-          10.h,
+          10.y,
           GridView.builder(
             itemCount: productList.length,
             shrinkWrap: true,

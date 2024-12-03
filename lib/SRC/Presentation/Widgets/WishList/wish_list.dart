@@ -59,7 +59,7 @@ class WishList extends StatelessWidget {
                                 return Column(
                                   children: [
                                     const WishListItemContainer(),
-                                    10.h,
+                                    10.y,
                                   ],
                                 );
                               }),

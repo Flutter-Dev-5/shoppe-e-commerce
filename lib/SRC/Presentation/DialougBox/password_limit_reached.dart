@@ -40,7 +40,7 @@ class _PasswordLimitReachedDialogState
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  30.h,
+                  30.y,
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: size.width * 0.2),
                     child: SizedBox(
@@ -56,14 +56,14 @@ class _PasswordLimitReachedDialogState
                       ),
                     ),
                   ),
-                  20.h,
+                  20.y,
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 40.0, vertical: 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        20.w,
+                        20.x,
                         Flexible(
                           child: ElevatedButton(
                             onPressed: widget.onConfirm,

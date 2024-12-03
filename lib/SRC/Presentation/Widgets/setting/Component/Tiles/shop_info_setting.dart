@@ -12,7 +12,7 @@ class ShopInfo extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        10.h,
+        10.y,
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0),
           child: AppText(
@@ -20,7 +20,7 @@ class ShopInfo extends StatelessWidget {
             style: theme.textTheme.displayMedium,
           ),
         ),
-        10.h,
+        10.y,
         ListTile(
           onTap: () {
             context.to(const SelectCountry());
@@ -38,7 +38,7 @@ class ShopInfo extends StatelessWidget {
                   text: "Pakistan",
                   style: theme.textTheme.titleSmall!.copyWith(fontSize: 13),
                 ),
-                10.w,
+                10.x,
                 const Icon(Icons.arrow_forward_ios)
               ],
             ),
@@ -64,7 +64,7 @@ class ShopInfo extends StatelessWidget {
                   text: "\$ USD",
                   style: theme.textTheme.titleSmall!.copyWith(fontSize: 13),
                 ),
-                10.w,
+                10.x,
                 const Icon(Icons.arrow_forward_ios)
               ],
             ),
@@ -90,7 +90,7 @@ class ShopInfo extends StatelessWidget {
                   text: "UK",
                   style: theme.textTheme.titleSmall!.copyWith(fontSize: 13),
                 ),
-                10.w,
+                10.x,
                 const Icon(Icons.arrow_forward_ios)
               ],
             ),

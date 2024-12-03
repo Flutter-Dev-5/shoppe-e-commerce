@@ -33,7 +33,7 @@ class JustForYouTile extends StatelessWidget {
             ),
           ),
         ),
-        2.h,
+        2.y,
         Container(
           height: 35,
           padding: const EdgeInsets.symmetric(horizontal: 8.0),

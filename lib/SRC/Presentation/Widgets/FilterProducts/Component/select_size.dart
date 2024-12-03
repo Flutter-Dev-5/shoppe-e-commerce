@@ -37,7 +37,7 @@ class SelectSizeOfProduct extends StatelessWidget {
                   text: AppStrings.clothing,
                   selectedIndexNotifier: isSelected,
                 ),
-                5.w,
+                5.x,
                 SizeProductContainer(
                   index: 1,
                   text: AppStrings.shoes,
@@ -47,7 +47,7 @@ class SelectSizeOfProduct extends StatelessWidget {
             )
           ],
         ),
-        5.h,
+        5.y,
         Stack(
           alignment: Alignment.center,
           children: [

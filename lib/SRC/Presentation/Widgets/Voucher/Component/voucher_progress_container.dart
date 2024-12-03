@@ -84,7 +84,7 @@ class VoucherProgressContainer extends StatelessWidget {
             ],
           ),
         ),
-        5.h,
+        5.y,
         AppText(
           text: title,
           style: theme.textTheme.labelMedium!.copyWith(fontSize: 12),

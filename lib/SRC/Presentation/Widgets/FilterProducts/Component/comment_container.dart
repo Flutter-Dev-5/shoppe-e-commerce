@@ -28,15 +28,15 @@ class CommentContainer extends StatelessWidget {
             imagePath: imagePath,
           ),
         ),
-        5.w,
+        5.x,
         Flexible(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              5.h,
+              5.y,
               AppText(text: userName, style: theme.textTheme.titleMedium),
-              5.h,
+              5.y,
               AnimatedRatingStars(
                 initialRating: ratingValue,
                 minRating: 0.0,
@@ -55,7 +55,7 @@ class CommentContainer extends StatelessWidget {
                 readOnly: true,
                 onChanged: (val) {},
               ),
-              5.h,
+              5.y,
               AppText(
                 text: userComment,
                 style: theme.textTheme.titleSmall!.copyWith(

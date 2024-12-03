@@ -12,7 +12,7 @@ class PersonalInfo extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        10.h,
+        10.y,
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0),
           child: AppText(
@@ -20,7 +20,7 @@ class PersonalInfo extends StatelessWidget {
             style: theme.textTheme.displayMedium,
           ),
         ),
-        20.h,
+        20.y,
         ListTile(
           onTap: () {
             context.to(const ProfileSetting());

@@ -34,7 +34,7 @@ class MostPopularItemsTile extends StatelessWidget {
                       imageWidth: 103,
                     )),
               ),
-              5.h,
+              5.y,
               SizedBox(
                 width: size.width / 4,
                 child: Padding(
@@ -48,7 +48,7 @@ class MostPopularItemsTile extends StatelessWidget {
                             text: productPrice.toString(),
                             style: Theme.of(context).textTheme.labelMedium,
                           ),
-                          2.w,
+                          2.x,
                           DisplayImage(
                             imageAddress: heartIconSvg,
                             imageHeight: 10,
@@ -68,7 +68,7 @@ class MostPopularItemsTile extends StatelessWidget {
             ],
           ),
         ),
-        2.w,
+        2.x,
       ],
     );
   }

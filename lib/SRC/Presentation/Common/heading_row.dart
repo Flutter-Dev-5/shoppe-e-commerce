@@ -29,7 +29,7 @@ class HeadingRow extends StatelessWidget {
                 text: nextText,
                 style: Theme.of(context).textTheme.labelMedium,
               ),
-              8.w,
+              8.x,
               ArrowForward(onTap: onTap),
             ],
           )

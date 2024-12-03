@@ -14,7 +14,7 @@ class ShopFlashSale extends StatelessWidget {
           const FlashSaleHeading(
             isShop: true,
           ),
-          10.h,
+          10.y,
           InkWell(
             onTap: () {
               // context.to(FlashSale());
@@ -36,7 +36,7 @@ class ShopFlashSale extends StatelessWidget {
               },
             ),
           ),
-          10.h
+          10.y
         ],
       ),
     ));

@@ -50,7 +50,7 @@ class CustomAppBar extends StatelessWidget {
                 ),
               ),
             ),
-            10.w,
+            10.x,
             isMyActivity
                 ? AppText(
                     text: text,
@@ -95,7 +95,7 @@ class CustomAppBar extends StatelessWidget {
                             ],
                           ),
                   ),
-            30.w,
+            30.x,
             Flexible(
                 child: SizedBox(
               height: 37,

@@ -66,7 +66,7 @@ class HistoryOfMyOrders extends StatelessWidget {
                                                   .history[index].imageAddress),
                                         ),
                                       ),
-                                      10.w,
+                                      10.x,
                                       Flexible(
                                         child: Column(
                                           crossAxisAlignment:
@@ -88,7 +88,7 @@ class HistoryOfMyOrders extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  10.h,
+                                  10.y,
                                   ValueListenableBuilder(
                                       valueListenable: ratingValue,
                                       builder: (context, rating, child) {
@@ -116,7 +116,7 @@ class HistoryOfMyOrders extends StatelessWidget {
                                           readOnly: false,
                                         );
                                       }),
-                                  10.h,
+                                  10.y,
                                   Container(
                                     height: 100,
                                     padding: const EdgeInsets.symmetric(
@@ -139,7 +139,7 @@ class HistoryOfMyOrders extends StatelessWidget {
                                               borderSide: BorderSide.none)),
                                     ),
                                   ),
-                                  10.h,
+                                  10.y,
                                   SizedBox(
                                     height: 40,
                                     child: CommonButton(
@@ -181,7 +181,7 @@ class HistoryOfMyOrders extends StatelessWidget {
                       descriptionText:
                           MyOrderData.history[index].productDescription,
                     ),
-                    10.h,
+                    10.y,
                   ],
                 );
               },

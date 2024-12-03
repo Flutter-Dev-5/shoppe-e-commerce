@@ -21,7 +21,7 @@ class ParcelUnsuccessfulContainerTrackOrder extends StatelessWidget {
                     style: theme.textTheme.titleMedium,
                     overflow: TextOverflow.ellipsis,
                   ),
-                  10.h,
+                  10.y,
                   AppText(
                     maxLines: 5,
                     text: AppStrings.dummyMessage,
@@ -29,7 +29,7 @@ class ParcelUnsuccessfulContainerTrackOrder extends StatelessWidget {
                       fontSize: 15,
                     ),
                   ),
-                  10.h,
+                  10.y,
                   SizedBox(
                     height: 50,
                     child: CommonButton(

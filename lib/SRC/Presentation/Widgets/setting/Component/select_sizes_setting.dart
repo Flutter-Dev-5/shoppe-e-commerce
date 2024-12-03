@@ -28,14 +28,14 @@ class SelectSizesSetting extends StatelessWidget {
                         text: AppStrings.setting,
                         style: theme.textTheme.displayMedium,
                       ),
-                      10.h,
+                      10.y,
                       AppText(
                         text: AppStrings.size,
                         style: theme.textTheme.titleSmall!.copyWith(
                           fontSize: 14,
                         ),
                       ),
-                      20.h,
+                      20.y,
                       SelectSizesContainer(
                         selectedSizes: selectedSizes,
                         title: "US",
@@ -44,7 +44,7 @@ class SelectSizesSetting extends StatelessWidget {
                           selectedSizes.value = 1;
                         },
                       ),
-                      10.h,
+                      10.y,
                       SelectSizesContainer(
                         selectedSizes: selectedSizes,
                         title: "EU",
@@ -53,7 +53,7 @@ class SelectSizesSetting extends StatelessWidget {
                           selectedSizes.value = 2;
                         },
                       ),
-                      10.h,
+                      10.y,
                       SelectSizesContainer(
                         selectedSizes: selectedSizes,
                         title: "UK",
@@ -62,8 +62,8 @@ class SelectSizesSetting extends StatelessWidget {
                           selectedSizes.value = 3;
                         },
                       ),
-                      10.h,
-                      10.h,
+                      10.y,
+                      10.y,
                     ],
                   );
                 })),

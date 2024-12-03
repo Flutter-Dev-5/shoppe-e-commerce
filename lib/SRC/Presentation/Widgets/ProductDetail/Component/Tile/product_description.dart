@@ -27,7 +27,7 @@ class ProductDescription extends StatelessWidget {
                             fontWeight: FontWeight.w800,
                           ),
                         ),
-                        5.h,
+                        5.y,
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -40,7 +40,7 @@ class ProductDescription extends StatelessWidget {
                                   decoration: TextDecoration.lineThrough,
                                   decorationColor: theme.indicatorColor),
                             ),
-                            5.w,
+                            5.x,
                             Container(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 10),
@@ -65,7 +65,7 @@ class ProductDescription extends StatelessWidget {
                     Row(
                       children: [
                         const TimeRemainingContainer(),
-                        5.w,
+                        5.x,
                         Container(
                           padding: const EdgeInsets.all(10),
                           decoration: BoxDecoration(

@@ -11,12 +11,12 @@ class DeliveryOfProductDetail extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          10.h,
+          10.y,
           AppText(
             text: AppStrings.delivery,
             style: theme.textTheme.displayMedium,
           ),
-          10.h,
+          10.y,
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             decoration: BoxDecoration(
@@ -62,7 +62,7 @@ class DeliveryOfProductDetail extends StatelessWidget {
               ],
             ),
           ),
-          10.h,
+          10.y,
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             decoration: BoxDecoration(

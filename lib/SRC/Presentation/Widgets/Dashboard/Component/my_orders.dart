@@ -11,12 +11,12 @@ class MyOrders extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          10.h,
+          10.y,
           AppText(
             text: AppStrings.myOrders,
             style: Theme.of(context).textTheme.displayMedium,
           ),
-          10.h,
+          10.y,
           SizedBox(
             width: double.infinity,
             child: SingleChildScrollView(
@@ -30,7 +30,7 @@ class MyOrders extends StatelessWidget {
                     },
                     text: AppStrings.toPay,
                   ),
-                  5.w,
+                  5.x,
                   TextContainer(
                     onTap: () {
                       context.to(const ToReceivedScreen());
@@ -38,12 +38,12 @@ class MyOrders extends StatelessWidget {
                     isNotification: true,
                     text: AppStrings.toRecieve,
                   ),
-                  5.w,
+                  5.x,
                   TextContainer(
                     onTap: () {},
                     text: AppStrings.toReview,
                   ),
-                  5.w,
+                  5.x,
                 ],
               ),
             ),

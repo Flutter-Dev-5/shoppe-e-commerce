@@ -18,7 +18,7 @@ class WishListMostPopular extends StatelessWidget {
             onTap: () {},
             padding: 0,
           ),
-          10.h,
+          10.y,
           Expanded(
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
@@ -35,7 +35,7 @@ class WishListMostPopular extends StatelessWidget {
                   );
                 }),
           ),
-          10.h,
+          10.y,
         ],
       ),
     );

@@ -17,7 +17,7 @@ class HomePageMostPopular extends StatelessWidget {
             onTap: () {},
             padding: padding,
           ),
-          10.h,
+          10.y,
           Expanded(
             child: Padding(
               padding: EdgeInsets.only(left: padding),
@@ -37,7 +37,7 @@ class HomePageMostPopular extends StatelessWidget {
                   }),
             ),
           ),
-          10.h,
+          10.y,
         ],
       ),
     );

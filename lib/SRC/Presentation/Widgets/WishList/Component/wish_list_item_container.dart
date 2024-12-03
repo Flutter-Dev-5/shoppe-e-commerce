@@ -49,7 +49,7 @@ class WishListItemContainer extends StatelessWidget {
             )
           ],
         ),
-        10.w,
+        10.x,
         Flexible(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4.0),
@@ -65,7 +65,7 @@ class WishListItemContainer extends StatelessWidget {
                   text: "\$1700",
                   style: theme.textTheme.titleMedium,
                 ),
-                2.h,
+                2.y,
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -83,7 +83,7 @@ class WishListItemContainer extends StatelessWidget {
                             ),
                           ),
                         ),
-                        5.w,
+                        5.x,
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           decoration: BoxDecoration(

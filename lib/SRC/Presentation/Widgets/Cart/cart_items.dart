@@ -33,7 +33,7 @@ class CartItems extends StatelessWidget {
                     flexibleSpace: FlexibleSpaceBar(
                       background: Column(
                         children: [
-                          30.h,
+                          30.y,
                           const ShippingAddress(),
                         ],
                       ),
@@ -44,7 +44,7 @@ class CartItems extends StatelessWidget {
                           text: AppStrings.cart,
                           style: theme.textTheme.displayLarge,
                         ),
-                        10.w,
+                        10.x,
                         Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -100,7 +100,7 @@ class CartItems extends StatelessWidget {
                                 itemBuilder: (context, index, child) {
                                   return Column(
                                     children: [
-                                      10.h,
+                                      10.y,
                                       const AddedToCartContainer(),
                                     ],
                                   );
@@ -110,12 +110,12 @@ class CartItems extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        10.h,
+                        10.y,
                         AppText(
                           text: AppStrings.fromYourWishList,
                           style: theme.textTheme.displayMedium,
                         ),
-                        20.h,
+                        20.y,
                       ],
                     ),
                   ),
@@ -125,7 +125,7 @@ class CartItems extends StatelessWidget {
                         return Column(
                           children: [
                             const WishListItemContainer(),
-                            20.h,
+                            20.y,
                           ],
                         );
                       }),
@@ -150,7 +150,7 @@ class CartItems extends StatelessWidget {
                             text: AppStrings.total,
                             style: theme.textTheme.displayMedium,
                           ),
-                          5.w,
+                          5.x,
                           AppText(
                             text: "\$1700",
                             style: theme.textTheme.titleMedium,

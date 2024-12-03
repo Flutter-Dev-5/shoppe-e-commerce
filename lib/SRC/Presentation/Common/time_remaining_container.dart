@@ -12,7 +12,7 @@ class TimeRemainingContainer extends StatelessWidget {
           Icons.alarm_sharp,
           color: theme.primaryColorDark,
         ),
-        5.w,
+        5.x,
         Container(
           width: 30,
           height: 30,
@@ -27,7 +27,7 @@ class TimeRemainingContainer extends StatelessWidget {
             ),
           ),
         ),
-        2.w,
+        2.x,
         Container(
           width: 30,
           height: 30,
@@ -42,7 +42,7 @@ class TimeRemainingContainer extends StatelessWidget {
             ),
           ),
         ),
-        2.w,
+        2.x,
         Container(
           width: 30,
           height: 30,

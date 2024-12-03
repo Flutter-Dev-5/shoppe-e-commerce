@@ -17,7 +17,7 @@ class SelectShippingOption extends StatelessWidget {
                 text: AppStrings.shippingOptions,
                 style: theme.textTheme.displayMedium,
               ),
-              10.h,
+              10.y,
               InkWell(
                 onTap: () {
                   isSelected.value = 1;
@@ -64,7 +64,7 @@ class SelectShippingOption extends StatelessWidget {
                                 ),
                               ),
                             ),
-                      3.w,
+                      3.x,
                       Flexible(
                         flex: 5,
                         child: Row(
@@ -74,7 +74,7 @@ class SelectShippingOption extends StatelessWidget {
                               style: theme.textTheme.titleMedium!
                                   .copyWith(fontWeight: FontWeight.normal),
                             ),
-                            4.w,
+                            4.x,
                             Container(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 5),
@@ -105,7 +105,7 @@ class SelectShippingOption extends StatelessWidget {
                   ),
                 ),
               ),
-              5.h,
+              5.y,
               InkWell(
                 onTap: () {
                   isSelected.value = 2;
@@ -162,7 +162,7 @@ class SelectShippingOption extends StatelessWidget {
                               style: theme.textTheme.titleMedium!
                                   .copyWith(fontWeight: FontWeight.normal),
                             ),
-                            4.w,
+                            4.x,
                             Container(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 5),
@@ -193,7 +193,7 @@ class SelectShippingOption extends StatelessWidget {
                   ),
                 ),
               ),
-              5.h,
+              5.y,
               const AppText(text: AppStrings.deliveryOnAndDate)
             ],
           );

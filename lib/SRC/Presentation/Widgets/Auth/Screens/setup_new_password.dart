@@ -21,12 +21,12 @@ class SetupNewPassword extends StatelessWidget {
                   height: size.height * 0.2,
                 ),
                 const ProfileImage(),
-                20.h,
+                20.y,
                 AppText(
                   text: AppStrings.setUpNewPassword,
                   style: Theme.of(context).textTheme.displayMedium,
                 ),
-                20.h,
+                20.y,
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: AppText(
@@ -36,13 +36,13 @@ class SetupNewPassword extends StatelessWidget {
                     maxLines: 2,
                   ),
                 ),
-                40.h,
+                40.y,
                 CustomTextField(
                   isNewPassword: true,
                   hintText: AppStrings.newPassword,
                   controller: TextEditingController(),
                 ),
-                20.h,
+                20.y,
                 CustomTextField(
                   isNewPassword: true,
                   hintText: AppStrings.repeatPassword,
@@ -56,7 +56,7 @@ class SetupNewPassword extends StatelessWidget {
                       context.pushReplacement(BottomNavigation());
                     },
                     text: AppStrings.save),
-                20.h,
+                20.y,
                 SizedBox(
                   width: 80,
                   child: InkWell(

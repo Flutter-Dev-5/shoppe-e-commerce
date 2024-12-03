@@ -13,12 +13,12 @@ class RatingAndReviews extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          10.h,
+          10.y,
           AppText(
             text: AppStrings.ratingAndReviews,
             style: theme.textTheme.displayMedium,
           ),
-          10.h,
+          10.y,
           ValueListenableBuilder(
               valueListenable: ratingValue,
               builder: (context, rating, child) {
@@ -46,7 +46,7 @@ class RatingAndReviews extends StatelessWidget {
                       animationCurve: Curves.easeInOut,
                       readOnly: false,
                     ),
-                    5.w,
+                    5.x,
                     Container(
                       height: 20,
                       padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -62,14 +62,14 @@ class RatingAndReviews extends StatelessWidget {
                   ],
                 );
               }),
-          10.h,
+          10.y,
           CommentContainer(
             ratingValue: ratingValue.value,
             imagePath: image33,
             userComment: AppStrings.dummy,
             userName: "Veronika",
           ),
-          20.h,
+          20.y,
           SizedBox(
               height: 50,
               child: CommonButton(
@@ -77,11 +77,11 @@ class RatingAndReviews extends StatelessWidget {
                     context.to(const ViewAllReviews());
                   },
                   text: AppStrings.viewAllReviews)),
-          10.h,
+          10.y,
           const HomePageMostPopular(
             padding: 0,
           ),
-          10.h,
+          10.y,
         ],
       ),
     );

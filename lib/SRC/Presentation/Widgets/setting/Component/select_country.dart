@@ -70,7 +70,7 @@ class _SelectCountryState extends State<SelectCountry> {
                         text: AppStrings.setting,
                         style: theme.textTheme.displayMedium,
                       ),
-                      10.h,
+                      10.y,
                       AppText(
                         text: AppStrings.country,
                         style: theme.textTheme.titleSmall!.copyWith(
@@ -83,7 +83,7 @@ class _SelectCountryState extends State<SelectCountry> {
                 SliverToBoxAdapter(
                   child: Column(
                     children: [
-                      20.h,
+                      20.y,
                       Container(
                         height: 40,
                         decoration: BoxDecoration(
@@ -140,7 +140,7 @@ class _SelectCountryState extends State<SelectCountry> {
                                   },
                                 ),
                               ),
-                              10.h,
+                              10.y,
                               SizedBox(
                                 height: size.height - 250,
                                 child: ListView.builder(

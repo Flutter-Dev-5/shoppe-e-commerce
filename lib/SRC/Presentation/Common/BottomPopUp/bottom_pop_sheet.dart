@@ -44,7 +44,7 @@ class CustomNewBottomSheet {
                       ),
                     ),
                   ),
-                  10.h,
+                  10.y,
                   isVoucher
                       ? customWidget
                       : Expanded(

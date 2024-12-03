@@ -21,17 +21,17 @@ class PasswordScreen extends StatelessWidget {
                   height: size.height * 0.2,
                 ),
                 const ProfileImage(),
-                40.h,
+                40.y,
                 AppText(
                   text: AppStrings.hello,
                   style: Theme.of(context).textTheme.displayLarge,
                 ),
-                20.h,
+                20.y,
                 Text(
                   AppStrings.typeYourPassword,
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
-                20.h,
+                20.y,
                 const SizedBox(width: 214, child: FourDigitCodeInput()),
                 SizedBox(
                   height: size.height * 0.3,
@@ -43,7 +43,7 @@ class PasswordScreen extends StatelessWidget {
                       text: AppStrings.notYou,
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
-                    5.w,
+                    5.x,
                     ArrowForward(
                       onTap: () {
                         Navigator.push(

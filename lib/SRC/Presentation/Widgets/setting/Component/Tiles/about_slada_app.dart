@@ -15,13 +15,13 @@ class AboutSladaApp extends StatelessWidget {
             text: AppStrings.slada,
             style: theme.textTheme.titleMedium,
           ),
-          5.h,
+          5.y,
           AppText(
             text: "${AppStrings.version} 1.0 April 2020",
             style: theme.textTheme.titleSmall!
                 .copyWith(fontSize: 12, fontWeight: FontWeight.w300),
           ),
-          20.h,
+          20.y,
         ],
       ),
     );

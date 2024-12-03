@@ -11,7 +11,7 @@ class PaymentMethodTile extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        10.h,
+        10.y,
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -23,14 +23,14 @@ class PaymentMethodTile extends StatelessWidget {
                 maxLines: 2,
               ),
             ),
-            5.w,
+            5.x,
             EditButton(onTap: () {
               CustomNewBottomSheet.customBottomSheet(SelectCardTile(),
                   AppStrings.paymentMethod, context, 0.4, true);
             }),
           ],
         ),
-        10.h,
+        10.y,
         InkWell(
           onTap: () {
             showDialog(

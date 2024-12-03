@@ -39,7 +39,7 @@ class _PaymentErrorDialogState extends State<PaymentErrorDialog> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  30.h,
+                  30.y,
                   Column(
                     children: [
                       Padding(
@@ -52,14 +52,14 @@ class _PaymentErrorDialogState extends State<PaymentErrorDialog> {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      5.h,
+                      5.y,
                       AppText(
                         text: AppStrings.paymentErrorMessageSubTitle,
                         style: theme.textTheme.titleSmall!.copyWith(
                           fontSize: 12,
                         ),
                       ),
-                      20.h,
+                      20.y,
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 20.0, vertical: 20),

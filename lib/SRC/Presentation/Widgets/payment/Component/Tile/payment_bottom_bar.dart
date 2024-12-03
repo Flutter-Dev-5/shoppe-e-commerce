@@ -25,7 +25,7 @@ class PaymentBottomBar extends StatelessWidget {
                       text: AppStrings.total,
                       style: theme.textTheme.displayMedium,
                     ),
-                    5.w,
+                    5.x,
                     AppText(
                       text: "\$3400",
                       style: theme.textTheme.titleMedium,

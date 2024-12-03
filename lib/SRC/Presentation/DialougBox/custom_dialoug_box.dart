@@ -43,7 +43,7 @@ class _CustomDialogState extends State<CustomDialog> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  30.h,
+                  30.y,
                   SizedBox(
                     child: widget.isRating
                         ? Column(
@@ -52,7 +52,7 @@ class _CustomDialogState extends State<CustomDialog> {
                                 text: "${AppStrings.done}!",
                                 style: theme.textTheme.displayMedium,
                               ),
-                              5.h,
+                              5.y,
                               AppText(
                                 text: AppStrings
                                     .yourCardHasBeenSuccessfullyCharged,
@@ -60,7 +60,7 @@ class _CustomDialogState extends State<CustomDialog> {
                                   fontSize: 14,
                                 ),
                               ),
-                              20.h,
+                              20.y,
                               AnimatedRatingStars(
                                 initialRating: widget.ratingValueOfProduct,
                                 minRating: 0.0,
@@ -82,7 +82,7 @@ class _CustomDialogState extends State<CustomDialog> {
                                 animationCurve: Curves.easeInOut,
                                 readOnly: true,
                               ),
-                              30.h,
+                              30.y,
                             ],
                           )
                         : Column(
@@ -91,7 +91,7 @@ class _CustomDialogState extends State<CustomDialog> {
                                 text: "${AppStrings.done}!",
                                 style: theme.textTheme.displayMedium,
                               ),
-                              5.h,
+                              5.y,
                               AppText(
                                 text: AppStrings
                                     .yourCardHasBeenSuccessfullyCharged,
@@ -99,7 +99,7 @@ class _CustomDialogState extends State<CustomDialog> {
                                   fontSize: 14,
                                 ),
                               ),
-                              40.h
+                              40.y
                             ],
                           ),
                   ),

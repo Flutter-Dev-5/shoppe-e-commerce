@@ -55,7 +55,7 @@ class AddedToCartContainer extends StatelessWidget {
               ],
             ),
           ),
-          8.w,
+          8.x,
           Flexible(
             flex: 5,
             child: Padding(
@@ -68,7 +68,7 @@ class AddedToCartContainer extends StatelessWidget {
                     style: theme.textTheme.titleSmall,
                     maxLines: 3,
                   ),
-                  4.h,
+                  4.y,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -84,7 +84,7 @@ class AddedToCartContainer extends StatelessWidget {
                           ),
                         ),
                       ),
-                      5.w,
+                      5.x,
                       Row(
                         children: [
                           Container(

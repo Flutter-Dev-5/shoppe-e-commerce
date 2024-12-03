@@ -27,7 +27,7 @@ class VoucherTile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Column(
         children: [
-          5.h,
+          5.y,
           SizedBox(
               height: 110,
               width: double.infinity,
@@ -61,7 +61,7 @@ class VoucherTile extends StatelessWidget {
                                             .withOpacity(0.6),
                                       ),
                                     ),
-                                    5.w,
+                                    5.x,
                                     Container(
                                       height: 20,
                                       padding: const EdgeInsets.symmetric(
@@ -104,13 +104,13 @@ class VoucherTile extends StatelessWidget {
                                 )
                         ],
                       ),
-                      5.h,
+                      5.y,
                       MySeparator(
                         color: isNearExpire
                             ? theme.indicatorColor.withOpacity(0.6)
                             : theme.primaryColorDark,
                       ),
-                      10.h,
+                      10.y,
                       Row(
                         children: [
                           DisplayImage(
@@ -118,7 +118,7 @@ class VoucherTile extends StatelessWidget {
                             imageWidth: 20,
                             imageHeight: 20,
                           ),
-                          5.w,
+                          5.x,
                           AppText(
                             text: voucherTitle,
                             style: theme.textTheme.titleMedium!.copyWith(
@@ -151,7 +151,7 @@ class VoucherTile extends StatelessWidget {
                   ),
                 ),
               )),
-          10.h,
+          10.y,
         ],
       ),
     );

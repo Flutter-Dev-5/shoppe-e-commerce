@@ -33,7 +33,7 @@ class SelectNumberOfItems extends StatelessWidget {
                   ),
                 ),
               ),
-              5.w,
+              5.x,
               Container(
                 height: 30,
                 decoration: BoxDecoration(
@@ -48,7 +48,7 @@ class SelectNumberOfItems extends StatelessWidget {
                   ),
                 ),
               ),
-              5.w,
+              5.x,
               InkWell(
                 onTap: () {
                   count.value = count.value + 1;

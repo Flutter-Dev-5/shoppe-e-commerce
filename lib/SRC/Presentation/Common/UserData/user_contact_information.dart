@@ -44,7 +44,7 @@ class UserContactInformation extends StatelessWidget {
                       ],
                     ),
                   ),
-                  5.w,
+                  5.x,
                   EditButton(onTap: () {
                     CustomNewBottomSheet.customBottomSheet(ContactInfoTile(),
                         AppStrings.contactInfo, context, 0.5, false);

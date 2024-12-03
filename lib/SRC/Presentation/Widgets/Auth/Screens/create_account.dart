@@ -19,7 +19,7 @@ class CreateAccount extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      80.h,
+                      80.y,
                       AppText(
                         text: AppStrings.createAccount,
                         style: theme.textTheme.headlineLarge,
@@ -27,23 +27,23 @@ class CreateAccount extends StatelessWidget {
                       ),
                       // 30.h,
                       // const CameraContainer(),
-                      80.h,
+                      80.y,
                       CustomTextField(
                         hintText: AppStrings.emailAddress,
                         controller: TextEditingController(),
                       ),
-                      10.h,
+                      10.y,
                       CustomTextField(
                         hintText: AppStrings.password,
                         isPassword: true,
                         controller: TextEditingController(),
                       ),
-                      10.h,
+                      10.y,
                       PhoneNumber(
                         hintText: AppStrings.phoneNumber,
                         controller: TextEditingController(),
                       ),
-                      20.h,
+                      20.y,
                       CommonButton(
                         // color: ,
                         onTap: () {
@@ -51,13 +51,13 @@ class CreateAccount extends StatelessWidget {
                         },
                         text: AppStrings.done,
                       ),
-                      10.h,
+                      10.y,
                       Center(
                           child: AppText(
                         text: AppStrings.or,
                         style: theme.textTheme.displayMedium,
                       )),
-                      10.h,
+                      10.y,
 
                       CommonButton(
                         color: theme.indicatorColor,
@@ -66,7 +66,7 @@ class CreateAccount extends StatelessWidget {
                         },
                         text: "Register deg Med",
                       ),
-                      10.h,
+                      10.y,
                       Center(
                           child: AppText(
                         text: AppStrings.cancel,

@@ -55,7 +55,7 @@ class _ProductDetailImageSliderState extends State<ProductDetailImageSlider> {
     return Stack(
       alignment: Alignment.center,
       children: [
-        80.h,
+        80.y,
         ClipRRect(
           child: PageView.builder(
             controller: _pageController,
@@ -70,7 +70,7 @@ class _ProductDetailImageSliderState extends State<ProductDetailImageSlider> {
             },
           ),
         ),
-        10.h,
+        10.y,
         Positioned(
           bottom: 10,
           child: Row(

@@ -58,7 +58,7 @@ class CommonChatContainer extends StatelessWidget {
                           ),
                         ),
                       ),
-                      5.w,
+                      5.x,
                       const SizedBox(
                         width: 50,
                         height: 50,
@@ -115,7 +115,7 @@ class CommonChatContainer extends StatelessWidget {
                                               fontWeight: FontWeight.w400,
                                               fontSize: 12),
                                     ),
-                                    10.h,
+                                    10.y,
                                     ToReceivedOrderData.ordersDetailsList[0]
                                                 .statusOfOrder ==
                                             AppStrings.delivered
@@ -166,7 +166,7 @@ class CommonChatContainer extends StatelessWidget {
                         ],
                       ),
                     ),
-                    10.h,
+                    10.y,
                   ],
                 ),
               ),

@@ -15,7 +15,7 @@ class SelectColor extends StatelessWidget {
           text: AppStrings.color,
           style: theme.textTheme.displayMedium,
         ),
-        10.h,
+        10.y,
         SizedBox(
           height: 45,
           child: ListView.builder(
@@ -37,7 +37,7 @@ class SelectColor extends StatelessWidget {
                         );
                       },
                     ),
-                    5.w,
+                    5.x,
                   ],
                 ),
               );

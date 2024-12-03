@@ -19,7 +19,7 @@ class Announcements extends StatelessWidget {
               text: AppStrings.announcement,
               style: theme.textTheme.labelMedium,
             ),
-            5.h,
+            5.y,
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -31,7 +31,7 @@ class Announcements extends StatelessWidget {
                     maxLines: 2,
                   ),
                 ),
-                5.w,
+                5.x,
                 ArrowForward(onTap: () {}),
               ],
             ),

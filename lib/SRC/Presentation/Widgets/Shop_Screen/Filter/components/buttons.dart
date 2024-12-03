@@ -16,7 +16,7 @@ class ButtonsOfFilter extends StatelessWidget {
             onTap: () {},
           ),
         ),
-        5.w,
+        5.x,
         Expanded(
             flex: 5,
             child: SizedBox(

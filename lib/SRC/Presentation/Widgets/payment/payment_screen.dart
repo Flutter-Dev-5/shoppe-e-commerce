@@ -40,14 +40,14 @@ class PaymentScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              40.h,
+                              40.y,
                               const ShippingAddress(
                                 padding: 10,
                               ),
                               const UserContactInformation(
                                 padding: 10,
                               ),
-                              5.h,
+                              5.y,
                             ],
                           ),
                         ),

@@ -58,7 +58,7 @@ class _FlashSaleDetailState extends State<FlashSaleDetail> {
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Column(
                         children: [
-                          60.h,
+                          60.y,
                           const FlashSaleHeading(
                             isDetailScreen: true,
                           ),

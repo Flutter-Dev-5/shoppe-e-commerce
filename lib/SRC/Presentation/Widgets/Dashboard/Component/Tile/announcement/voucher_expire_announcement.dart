@@ -39,7 +39,7 @@ class VoucherExpireAnnouncement extends StatelessWidget {
                   ),
                 ),
               ),
-              15.w,
+              15.x,
               Flexible(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

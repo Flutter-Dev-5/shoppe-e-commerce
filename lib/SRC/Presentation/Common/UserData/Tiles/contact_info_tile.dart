@@ -25,8 +25,8 @@ class ContactInfoTile extends StatelessWidget {
             controller: TextEditingController(),
             radius: 10,
           ),
-          10.h,
-          20.h,
+          10.y,
+          20.y,
           SizedBox(
             height: 50,
             child: CommonButton(
@@ -35,7 +35,7 @@ class ContactInfoTile extends StatelessWidget {
                 },
                 text: AppStrings.saveChanges),
           ),
-          40.h,
+          40.y,
         ],
       ),
     );

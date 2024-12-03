@@ -105,7 +105,7 @@ class DiscountTile extends StatelessWidget {
                       text: "\$$productDiscountPrice",
                       style: theme.textTheme.titleMedium,
                     ),
-                    5.w,
+                    5.x,
                     AppText(
                       text: "\$$productActualPrice",
                       style: theme.textTheme.titleMedium!.copyWith(

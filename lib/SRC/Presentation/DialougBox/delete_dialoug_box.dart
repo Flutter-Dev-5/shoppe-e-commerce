@@ -38,7 +38,7 @@ class _DeleteDialogBoxState extends State<DeleteDialogBox> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  30.h,
+                  30.y,
                   Column(
                     children: [
                       Padding(
@@ -51,14 +51,14 @@ class _DeleteDialogBoxState extends State<DeleteDialogBox> {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      5.h,
+                      5.y,
                       AppText(
                         text: AppStrings.youWantBeAbleToReStoreData,
                         style: theme.textTheme.titleSmall!.copyWith(
                           fontSize: 12,
                         ),
                       ),
-                      20.h,
+                      20.y,
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 20.0, vertical: 20),
@@ -89,7 +89,7 @@ class _DeleteDialogBoxState extends State<DeleteDialogBox> {
                                 ),
                               ),
                             ),
-                            20.w,
+                            20.x,
                             Flexible(
                               child: ElevatedButton(
                                 onPressed: widget.onConfirm,

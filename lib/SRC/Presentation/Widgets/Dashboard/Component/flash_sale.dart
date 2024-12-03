@@ -14,7 +14,7 @@ class FlashSale extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const FlashSaleHeading(),
-          10.h,
+          10.y,
           GridView.builder(
             shrinkWrap: true,
             itemCount: FlashSaleData.flashSale.length,
@@ -31,7 +31,7 @@ class FlashSale extends StatelessWidget {
               );
             },
           ),
-          10.h
+          10.y
         ],
       ),
     ));

@@ -20,7 +20,7 @@ class CategoryList extends StatelessWidget {
                     onPressed: () => selectedCategory.value = "All",
                   ),
                 ),
-                5.w,
+                5.x,
                 Flexible(
                   child: CategoryButton(
                     isSelected: selectedCategory.value == "Female",
@@ -28,7 +28,7 @@ class CategoryList extends StatelessWidget {
                     onPressed: () => selectedCategory.value = "Female",
                   ),
                 ),
-                5.w,
+                5.x,
                 Flexible(
                   child: CategoryButton(
                     isSelected: selectedCategory.value == "Male",

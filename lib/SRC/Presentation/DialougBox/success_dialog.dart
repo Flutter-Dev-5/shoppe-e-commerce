@@ -42,7 +42,7 @@ class _SuccessDialogState extends State<SuccessDialog> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  30.h,
+                  30.y,
                   SizedBox(
                     child: Column(
                       children: [
@@ -50,14 +50,14 @@ class _SuccessDialogState extends State<SuccessDialog> {
                           text: "${AppStrings.done}!",
                           style: theme.textTheme.displayMedium,
                         ),
-                        5.h,
+                        5.y,
                         AppText(
                           text: AppStrings.yourCardHasBeenSuccessfullyCharged,
                           style: theme.textTheme.titleSmall!.copyWith(
                             fontSize: 14,
                           ),
                         ),
-                        20.h,
+                        20.y,
                         ElevatedButton(
                           onPressed: widget.onConfirm,
                           style: ElevatedButton.styleFrom(
@@ -75,7 +75,7 @@ class _SuccessDialogState extends State<SuccessDialog> {
                             ),
                           ),
                         ),
-                        40.h
+                        40.y
                       ],
                     ),
                   ),

@@ -37,19 +37,19 @@ class EditAddressTile extends StatelessWidget {
             hintText: AppStrings.address,
             controller: TextEditingController(),
           ),
-          10.h,
+          10.y,
           TextInputFieldOfPayment(
             titleOfTextField: AppStrings.townOrCity,
             hintText: AppStrings.countryWithCode,
             controller: TextEditingController(),
           ),
-          10.h,
+          10.y,
           TextInputFieldOfPayment(
             titleOfTextField: AppStrings.postCode,
             hintText: "7000",
             controller: TextEditingController(),
           ),
-          20.h,
+          20.y,
           SizedBox(
             height: 50,
             child: CommonButton(
@@ -58,7 +58,7 @@ class EditAddressTile extends StatelessWidget {
                 },
                 text: AppStrings.saveChanges),
           ),
-          40.h,
+          40.y,
         ],
       ),
     );

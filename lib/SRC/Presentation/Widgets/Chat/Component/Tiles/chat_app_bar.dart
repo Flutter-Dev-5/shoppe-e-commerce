@@ -17,11 +17,11 @@ class ChatAppBar extends StatelessWidget {
               image: emptyCart,
             ),
           ),
-          5.w,
+          5.x,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              5.h,
+              5.y,
               AppText(
                 text: AppStrings.chatBot,
                 style: theme.textTheme.titleMedium!

@@ -20,7 +20,7 @@ class VarientOfProductDetail extends StatelessWidget {
                     text: AppStrings.variation,
                     style: theme.textTheme.displayMedium,
                   ),
-                  5.w,
+                  5.x,
                   Container(
                     height: 25,
                     padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -34,7 +34,7 @@ class VarientOfProductDetail extends StatelessWidget {
                           .copyWith(fontWeight: FontWeight.w300),
                     ),
                   ),
-                  5.w,
+                  5.x,
                   Container(
                     height: 25,
                     padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -53,7 +53,7 @@ class VarientOfProductDetail extends StatelessWidget {
               ArrowForward(onTap: () {}),
             ],
           ),
-          10.h,
+          10.y,
           SizedBox(
             height: 60,
             child: ListView.builder(
@@ -72,7 +72,7 @@ class VarientOfProductDetail extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10),
                             child: const DisplayImage(imageAddress: image33)),
                       ),
-                      5.w,
+                      5.x,
                     ],
                   );
                 }),

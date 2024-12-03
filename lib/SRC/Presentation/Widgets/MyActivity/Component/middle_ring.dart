@@ -32,7 +32,7 @@ class MiddleRing extends StatelessWidget {
 
               // Circular shadow
               BoxShadow(
-                offset: Offset(1.5, 1.5),
+                offset: const Offset(1.5, 1.5),
                 color: theme.scaffoldBackgroundColor,
                 spreadRadius: 2.0,
                 blurRadius: 4,
@@ -46,7 +46,7 @@ class MiddleRing extends StatelessWidget {
                 text: "Total",
                 style: theme.textTheme.bodyMedium,
               ),
-              10.h,
+              10.y,
               AppText(
                 text: "\$ 3650",
                 style: theme.textTheme.displayMedium,

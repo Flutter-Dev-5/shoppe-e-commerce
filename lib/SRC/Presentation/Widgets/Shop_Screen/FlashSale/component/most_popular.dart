@@ -17,7 +17,7 @@ class MostPopular extends StatelessWidget {
             nextText: AppStrings.seeAll,
             onTap: () {},
           ),
-          10.h,
+          10.y,
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -37,7 +37,7 @@ class MostPopular extends StatelessWidget {
                   }),
             ),
           ),
-          10.h,
+          10.y,
         ],
       ),
     );

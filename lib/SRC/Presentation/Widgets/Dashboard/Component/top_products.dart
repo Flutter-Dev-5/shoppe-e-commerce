@@ -18,7 +18,7 @@ class TopProducts extends StatelessWidget {
               text: AppStrings.topProducts,
               style: Theme.of(context).textTheme.displayMedium,
             ),
-            10.h,
+            10.y,
             Expanded(
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -29,7 +29,7 @@ class TopProducts extends StatelessWidget {
                     );
                   }),
             ),
-            10.h,
+            10.y,
           ],
         ),
       ),

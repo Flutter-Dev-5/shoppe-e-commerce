@@ -39,7 +39,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                       ProfileTextField(
                                           hintText: AppStrings.cardNumber,
                                           controller: TextEditingController()),
-                                      20.h,
+                                      20.y,
                                       AppText(
                                         text: AppStrings.cardNumber,
                                         style: theme.textTheme.titleSmall!
@@ -50,7 +50,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                       ProfileTextField(
                                           hintText: AppStrings.required,
                                           controller: TextEditingController()),
-                                      20.h,
+                                      20.y,
                                       Row(
                                         children: [
                                           Expanded(
@@ -74,7 +74,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                               ],
                                             ),
                                           ),
-                                          5.w,
+                                          5.x,
                                           Expanded(
                                             child: Column(
                                               crossAxisAlignment:
@@ -98,7 +98,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                      20.h,
+                                      20.y,
                                       SizedBox(
                                           height: 40,
                                           child: CommonButton(
@@ -124,7 +124,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        10.w,
+                        10.x,
                         index + 1 == count.value
                             ? InkWell(
                                 onTap: () {
@@ -147,7 +147,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                                 hintText: AppStrings.cardNumber,
                                                 controller:
                                                     TextEditingController()),
-                                            20.h,
+                                            20.y,
                                             AppText(
                                               text: AppStrings.cardNumber,
                                               style: theme.textTheme.titleSmall!
@@ -159,7 +159,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                                 hintText: AppStrings.required,
                                                 controller:
                                                     TextEditingController()),
-                                            20.h,
+                                            20.y,
                                             Row(
                                               children: [
                                                 Expanded(
@@ -184,7 +184,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                                     ],
                                                   ),
                                                 ),
-                                                5.w,
+                                                5.x,
                                                 Expanded(
                                                   child: Column(
                                                     crossAxisAlignment:
@@ -209,7 +209,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                                 ),
                                               ],
                                             ),
-                                            20.h,
+                                            20.y,
                                             SizedBox(
                                                 height: 40,
                                                 child: CommonButton(

@@ -25,14 +25,14 @@ class SignInScreen extends StatelessWidget {
                   text: AppStrings.login,
                   style: Theme.of(context).textTheme.headlineLarge,
                 ),
-                10.h,
+                10.y,
                 Row(
                   children: [
                     AppText(
                       text: AppStrings.goodToSeeYouBack,
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
-                    5.w,
+                    5.x,
                     SvgPicture.asset(
                       heartIconSvg,
                       width: 15,
@@ -40,12 +40,12 @@ class SignInScreen extends StatelessWidget {
                     )
                   ],
                 ),
-                20.h,
+                20.y,
                 CustomTextField(
                   hintText: AppStrings.emailAddress,
                   controller: TextEditingController(),
                 ),
-                30.h,
+                30.y,
                 CommonButton(
                   onTap: () {
                     Navigator.push(
@@ -55,7 +55,7 @@ class SignInScreen extends StatelessWidget {
                   },
                   text: AppStrings.next,
                 ),
-                20.h,
+                20.y,
                 Align(
                   alignment: Alignment.center,
                   child: AppText(

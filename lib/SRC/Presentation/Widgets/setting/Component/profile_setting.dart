@@ -24,14 +24,14 @@ class ProfileSetting extends StatelessWidget {
                   text: AppStrings.setting,
                   style: theme.textTheme.displayMedium,
                 ),
-                10.h,
+                10.y,
                 AppText(
                   text: AppStrings.yourProfile,
                   style: theme.textTheme.titleSmall!.copyWith(
                     fontSize: 16,
                   ),
                 ),
-                20.h,
+                20.y,
                 Stack(
                   children: [
                     Container(
@@ -64,17 +64,17 @@ class ProfileSetting extends StatelessWidget {
                             child: EditButton(onTap: () {})))
                   ],
                 ),
-                20.h,
+                20.y,
                 ProfileTextField(
                   hintText: 'Name',
                   controller: TextEditingController(),
                 ),
-                10.h,
+                10.y,
                 ProfileTextField(
                   hintText: 'name@gmail.com',
                   controller: TextEditingController(),
                 ),
-                10.h,
+                10.y,
                 ProfileTextField(
                   isPassword: true,
                   hintText: '*********',

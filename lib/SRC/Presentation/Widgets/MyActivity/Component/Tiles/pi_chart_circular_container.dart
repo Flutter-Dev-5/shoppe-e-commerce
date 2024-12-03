@@ -27,7 +27,7 @@ class PiChartCircularContainer extends StatelessWidget {
               angle: pi * 1,
               child: CustomPaint(
                 painter: ProgressRings(
-                  completedPercentage: 0.85,
+                  completedPercentage: 1.5,
                   circleWidth: 20.0,
                   gradient: greenGradient,
                   gradientStartAngle: 0.0,
@@ -42,7 +42,7 @@ class PiChartCircularContainer extends StatelessWidget {
               angle: pi / 1.1,
               child: CustomPaint(
                 painter: ProgressRings(
-                  completedPercentage: 0.90,
+                  completedPercentage: 0.00,
                   circleWidth: 20.0,
                   gradient: turqoiseGradient,
                 ),
@@ -50,10 +50,10 @@ class PiChartCircularContainer extends StatelessWidget {
               ),
             ),
             Transform.rotate(
-              angle: pi / 12,
+              angle: pi / 10,
               child: CustomPaint(
                 painter: ProgressRings(
-                  completedPercentage: 0.4,
+                  completedPercentage: 0.0,
                   circleWidth: 20.0,
                   gradient: [theme.primaryColorDark, theme.primaryColorDark],
                   gradientStartAngle: 0.0,
@@ -67,7 +67,7 @@ class PiChartCircularContainer extends StatelessWidget {
               angle: pi * 0.9,
               child: CustomPaint(
                 painter: ProgressRings(
-                  completedPercentage: 0.24,
+                  completedPercentage: 0.0,
                   circleWidth: 20.0,
                   gradient: greenGradient,
                   gradientStartAngle: 0.0,
@@ -81,7 +81,7 @@ class PiChartCircularContainer extends StatelessWidget {
               angle: pi * 1.8,
               child: CustomPaint(
                 painter: ProgressRings(
-                  completedPercentage: 0.15,
+                  completedPercentage: 0.0,
                   circleWidth: 20.0,
                   gradient: [theme.indicatorColor, theme.indicatorColor],
                   gradientStartAngle: 0.0,

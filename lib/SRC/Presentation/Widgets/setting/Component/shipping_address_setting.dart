@@ -41,7 +41,7 @@ class ShippingAddressSetting extends StatelessWidget {
                         text: AppStrings.setting,
                         style: theme.textTheme.displayMedium,
                       ),
-                      10.h,
+                      10.y,
                       AppText(
                         text: AppStrings.shippingAddress,
                         style: theme.textTheme.titleSmall!.copyWith(
@@ -55,7 +55,7 @@ class ShippingAddressSetting extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      20.h,
+                      20.y,
                       AppText(
                         text: AppStrings.country,
                         style: theme.textTheme.titleSmall!.copyWith(
@@ -83,7 +83,7 @@ class ShippingAddressSetting extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      10.h,
+                      10.y,
                       AppText(
                         text: AppStrings.address1,
                         style: theme.textTheme.titleSmall!.copyWith(
@@ -93,7 +93,7 @@ class ShippingAddressSetting extends StatelessWidget {
                       ProfileTextField(
                           hintText: AppStrings.required,
                           controller: TextEditingController()),
-                      20.h,
+                      20.y,
                       AppText(
                         text: AppStrings.townOrCity,
                         style: theme.textTheme.titleSmall!.copyWith(
@@ -103,7 +103,7 @@ class ShippingAddressSetting extends StatelessWidget {
                       ProfileTextField(
                           hintText: AppStrings.required,
                           controller: TextEditingController()),
-                      20.h,
+                      20.y,
                       AppText(
                         text: AppStrings.postCode,
                         style: theme.textTheme.titleSmall!.copyWith(
@@ -113,7 +113,7 @@ class ShippingAddressSetting extends StatelessWidget {
                       ProfileTextField(
                           hintText: AppStrings.required,
                           controller: TextEditingController()),
-                      20.h,
+                      20.y,
                       AppText(
                         text: AppStrings.phoneNumber,
                         style: theme.textTheme.titleSmall!.copyWith(
@@ -123,7 +123,7 @@ class ShippingAddressSetting extends StatelessWidget {
                       ProfileTextField(
                           hintText: AppStrings.required,
                           controller: TextEditingController()),
-                      40.h,
+                      40.y,
                       SizedBox(
                         height: 40,
                         child: CommonButton(

@@ -24,7 +24,7 @@ class MyActivityProductCost extends StatelessWidget {
               ),
             ],
           ),
-          10.h,
+          10.y,
           const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [

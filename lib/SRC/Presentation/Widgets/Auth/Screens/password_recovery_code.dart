@@ -21,12 +21,12 @@ class PasswordRecoveryCode extends StatelessWidget {
                   height: size.height * 0.2,
                 ),
                 const ProfileImage(),
-                20.h,
+                20.y,
                 AppText(
                   text: AppStrings.passwordRecovery,
                   style: Theme.of(context).textTheme.displayMedium,
                 ),
-                20.h,
+                20.y,
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 43),
                   child: AppText(
@@ -35,12 +35,12 @@ class PasswordRecoveryCode extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                20.h,
+                20.y,
                 AppText(
                   text: "+92*******0000",
                   style: Theme.of(context).textTheme.displaySmall,
                 ),
-                20.h,
+                20.y,
                 const FourDigitCodeInput(),
                 SizedBox(
                   height: size.height * 0.16,
@@ -55,7 +55,7 @@ class PasswordRecoveryCode extends StatelessWidget {
                     isRecoveryButton: true,
                   ),
                 ),
-                20.h,
+                20.y,
                 AppText(
                   onTap: () {
                     context.pushReplacement(const Splashscreen());

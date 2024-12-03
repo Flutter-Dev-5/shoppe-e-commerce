@@ -57,7 +57,7 @@ class _ImageSliderScreenState extends State<ImageSliderScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Column(
         children: [
-          90.h,
+          90.y,
           Expanded(
             // aspectRatio: 16 / 5,
             child: ClipRRect(
@@ -76,7 +76,7 @@ class _ImageSliderScreenState extends State<ImageSliderScreen> {
               ),
             ),
           ),
-          10.h,
+          10.y,
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: _buildPageIndicator(),

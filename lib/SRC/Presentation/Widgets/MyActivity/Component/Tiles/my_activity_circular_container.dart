@@ -34,7 +34,7 @@ class MyActivityCircularContainer extends StatelessWidget {
             ),
           ),
         ),
-        10.h,
+        10.y,
         AppText(
           text: text,
           style: theme.textTheme.titleSmall!

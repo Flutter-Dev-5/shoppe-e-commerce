@@ -24,7 +24,7 @@ class Discount extends StatelessWidget {
                     text: "20%",
                     style: theme.textTheme.displayMedium,
                   ),
-                  5.w,
+                  5.x,
                   AppText(
                     text: AppStrings.discount,
                     style: theme.textTheme.displayMedium,
@@ -38,7 +38,7 @@ class Discount extends StatelessWidget {
                   child: const DisplayImage(imageAddress: filerIcon)),
             ],
           ),
-          10.h,
+          10.y,
           SizedBox(
             child: Column(
               children: [
@@ -67,7 +67,7 @@ class Discount extends StatelessWidget {
                               .discountItem[index].productDescription);
                       // }
                     }),
-                10.h,
+                10.y,
               ],
             ),
           ),

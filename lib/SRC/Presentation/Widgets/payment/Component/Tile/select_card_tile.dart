@@ -39,7 +39,7 @@ class SelectCardTile extends StatelessWidget {
                               imageWidth: size.width - 80,
                             ),
                           ),
-                          10.w,
+                          10.x,
                           index + 1 == count.value
                               ? InkWell(
                                   onTap: () {

@@ -20,7 +20,7 @@ class RecentlyView extends StatelessWidget {
               text: AppStrings.recentlyViewed,
               style: Theme.of(context).textTheme.displayMedium,
             ),
-            10.h,
+            10.y,
             Expanded(
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -36,7 +36,7 @@ class RecentlyView extends StatelessWidget {
                     );
                   }),
             ),
-            10.h,
+            10.y,
           ],
         ),
       ),

@@ -18,14 +18,14 @@ class JustForYouTileFilter extends StatelessWidget {
               height: 50,
               fit: BoxFit.fill,
             ),
-            15.w,
+            15.x,
             Row(
               children: [
                 AppText(
                   text: AppStrings.justForYou,
                   style: theme.textTheme.titleMedium,
                 ),
-                5.w,
+                5.x,
                 Icon(
                   Icons.star,
                   color: theme.primaryColorDark,

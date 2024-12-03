@@ -67,13 +67,13 @@ class RecentlyViewedOfRecentScreen extends StatelessWidget {
                     text: AppStrings.today,
                     selectedIndex: selectedIndex, // Pass selectedIndex
                   ),
-                  5.w,
+                  5.x,
                   SelectDayOfRecently(
                     index: 1,
                     text: AppStrings.yesterday,
                     selectedIndex: selectedIndex, // Pass selectedIndex
                   ),
-                  5.w,
+                  5.x,
                   ArrowDown(
                     onTap: () {
                       showContainer.value = true;

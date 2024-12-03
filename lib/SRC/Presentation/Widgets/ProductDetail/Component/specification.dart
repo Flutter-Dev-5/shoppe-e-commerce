@@ -11,17 +11,17 @@ class SpecificationOfDetailProduct extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          10.h,
+          10.y,
           AppText(
             text: AppStrings.specification,
             style: theme.textTheme.displayMedium,
           ),
-          10.h,
+          10.y,
           AppText(
             text: AppStrings.material,
             style: theme.textTheme.displaySmall,
           ),
-          10.h,
+          10.y,
           Row(
             children: [
               Container(
@@ -37,7 +37,7 @@ class SpecificationOfDetailProduct extends StatelessWidget {
                   ),
                 ),
               ),
-              5.w,
+              5.x,
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 height: 25,
@@ -53,12 +53,12 @@ class SpecificationOfDetailProduct extends StatelessWidget {
               ),
             ],
           ),
-          10.h,
+          10.y,
           AppText(
             text: AppStrings.origin,
             style: theme.textTheme.displaySmall,
           ),
-          5.h,
+          5.y,
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
@@ -74,7 +74,7 @@ class SpecificationOfDetailProduct extends StatelessWidget {
               ),
             ),
           ),
-          10.h,
+          10.y,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

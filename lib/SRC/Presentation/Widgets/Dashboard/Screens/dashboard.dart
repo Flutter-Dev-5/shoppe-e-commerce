@@ -35,12 +35,12 @@ class Dashboard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  35.h,
+                  35.y,
                   AppText(
                     text: AppStrings.hello,
                     style: theme.textTheme.displayLarge,
                   ),
-                  20.h,
+                  20.y,
                   const RewardAnnouncement(),
                 ],
               ),

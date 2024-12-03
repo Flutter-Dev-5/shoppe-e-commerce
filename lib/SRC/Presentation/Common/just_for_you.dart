@@ -18,7 +18,7 @@ class JustForYou extends StatelessWidget {
                 text: AppStrings.justForYou,
                 style: Theme.of(context).textTheme.displayMedium,
               ),
-              10.w,
+              10.x,
               Icon(
                 Icons.star,
                 color: theme.primaryColorDark,
@@ -26,7 +26,7 @@ class JustForYou extends StatelessWidget {
               ),
             ],
           ),
-          10.h,
+          10.y,
           GridView.builder(
             itemCount: NewItemsData.newItem.length,
             shrinkWrap: true,

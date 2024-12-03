@@ -37,7 +37,7 @@ class ChatTextContainer extends StatelessWidget {
                       children: [
                         const SelectedMarkContainer(
                             width: 20, height: 20, iconSize: 15),
-                        10.w,
+                        10.x,
                         AppText(
                           text: text,
                           style: theme.textTheme.bodyLarge!.copyWith(

@@ -28,14 +28,14 @@ class SelectCurrencySetting extends StatelessWidget {
                         text: AppStrings.setting,
                         style: theme.textTheme.displayMedium,
                       ),
-                      10.h,
+                      10.y,
                       AppText(
                         text: AppStrings.currency,
                         style: theme.textTheme.titleSmall!.copyWith(
                           fontSize: 14,
                         ),
                       ),
-                      20.h,
+                      20.y,
                       CurrencyContainerSetting(
                         selectedCurrency: selectedCurrency,
                         title: "\$ USD",
@@ -44,7 +44,7 @@ class SelectCurrencySetting extends StatelessWidget {
                           selectedCurrency.value = 1;
                         },
                       ),
-                      10.h,
+                      10.y,
                       CurrencyContainerSetting(
                         selectedCurrency: selectedCurrency,
                         title: "€ EURO",
@@ -53,7 +53,7 @@ class SelectCurrencySetting extends StatelessWidget {
                           selectedCurrency.value = 2;
                         },
                       ),
-                      10.h,
+                      10.y,
                       CurrencyContainerSetting(
                         selectedCurrency: selectedCurrency,
                         title: "₫ VND",
@@ -62,7 +62,7 @@ class SelectCurrencySetting extends StatelessWidget {
                           selectedCurrency.value = 3;
                         },
                       ),
-                      10.h,
+                      10.y,
                       CurrencyContainerSetting(
                         selectedCurrency: selectedCurrency,
                         title: "₽ RUB",
@@ -71,7 +71,7 @@ class SelectCurrencySetting extends StatelessWidget {
                           selectedCurrency.value = 4;
                         },
                       ),
-                      10.h,
+                      10.y,
                     ],
                   );
                 })),

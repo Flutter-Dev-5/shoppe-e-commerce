@@ -43,7 +43,7 @@ class MyOrdersContainer extends StatelessWidget {
               ),
             ),
           ),
-          5.w,
+          5.x,
           Flexible(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -56,12 +56,12 @@ class MyOrdersContainer extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   softWrap: true,
                 ),
-                10.h,
+                10.y,
                 AppText(
                   text: "Order # $orderNumber",
                   style: theme.textTheme.labelMedium,
                 ),
-                20.h,
+                20.y,
                 Row(
                   children: [
                     Container(
@@ -78,7 +78,7 @@ class MyOrdersContainer extends StatelessWidget {
                         ),
                       ),
                     ),
-                    20.w,
+                    20.x,
                     InkWell(
                       onTap: onTap,
                       child: Container(

@@ -31,34 +31,37 @@ class ProgressRings extends CustomPainter {
 
     Rect boundingSquare = Rect.fromCircle(center: center, radius: radius);
 
-    paint(List<Color> colors,
-        {double startAngle = 0.0, double endAngle = pi * 2}) {
-      final Gradient gradient = SweepGradient(
-        startAngle: startAngle,
-        endAngle: endAngle,
-        colors: colors,
-      );
 
-      return Paint()
-        ..strokeCap = StrokeCap.round
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = circleWidth
-        ..shader = gradient.createShader(boundingSquare);
-    }
 
     canvas.drawArc(
       boundingSquare,
       -pi / 2 + progressStartAngle,
       arcAngle - lengthToRemove,
       false,
-      paint(
+      painted(
         gradient,
         startAngle: gradientStartAngle,
         endAngle: gradientEndAngle,
+        boundingSquare: boundingSquare,
       ),
     );
-  }
 
+
+  }
+  painted(List<Color> colors,
+      {double startAngle = 0.0, double endAngle = pi * 2, required Rect boundingSquare}) {
+    final Gradient gradient = SweepGradient(
+      startAngle: startAngle,
+      endAngle: endAngle,
+      colors: colors,
+    );
+
+    return Paint()
+      ..strokeCap = StrokeCap.round
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = circleWidth
+      ..shader = gradient.createShader(boundingSquare);
+  }
   @override
-  bool shouldRepaint(CustomPainter painter) => true;
+  bool shouldRepaint(CustomPainter oldDelegate) => true;
 }

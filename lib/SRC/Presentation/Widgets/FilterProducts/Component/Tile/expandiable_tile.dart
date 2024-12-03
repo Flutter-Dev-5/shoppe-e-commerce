@@ -38,7 +38,7 @@ class ExpandAbleTile extends StatelessWidget {
               style: theme.textTheme.titleMedium,
             ),
             children: [
-              10.h,
+              10.y,
               GridView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
@@ -68,7 +68,7 @@ class ExpandAbleTile extends StatelessWidget {
                   );
                 },
               ),
-              10.h,
+              10.y,
             ],
           ),
         ),

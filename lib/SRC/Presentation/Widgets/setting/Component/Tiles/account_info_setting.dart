@@ -10,7 +10,7 @@ class AccountInfoSetting extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        10.h,
+        10.y,
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0),
           child: AppText(
@@ -18,7 +18,7 @@ class AccountInfoSetting extends StatelessWidget {
             style: theme.textTheme.displayMedium,
           ),
         ),
-        10.h,
+        10.y,
         ListTile(
           onTap: () {
             context.to(const SelectLanguageSetting());
@@ -36,7 +36,7 @@ class AccountInfoSetting extends StatelessWidget {
                   text: "English",
                   style: theme.textTheme.titleSmall!.copyWith(fontSize: 13),
                 ),
-                10.w,
+                10.x,
                 const Icon(Icons.arrow_forward_ios)
               ],
             ),

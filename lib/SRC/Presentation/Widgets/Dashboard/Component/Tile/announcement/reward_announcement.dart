@@ -47,7 +47,7 @@ class RewardAnnouncement extends StatelessWidget {
                           width: 20, height: 20, iconSize: 15))
                 ],
               ),
-              15.w,
+              15.x,
               Flexible(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

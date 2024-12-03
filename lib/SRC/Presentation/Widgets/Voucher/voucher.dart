@@ -48,7 +48,7 @@ class _VoucherState extends State<Voucher> {
                         width: size.width,
                         child: Column(
                           children: [
-                            120.h,
+                            120.y,
                             Row(
                               children: [
                                 Flexible(
