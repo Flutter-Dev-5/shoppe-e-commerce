@@ -1,3 +1,4 @@
+import 'package:tf_ecommerce/SRC/Application/Utils/Extensions/responsive_extension.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
 
 void main() {
@@ -9,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    MediaQueryManager().initialize(context);
     return ValueListenableBuilder(
       valueListenable: AppTheme.themeMode,
       builder: (BuildContext context, ThemeMode value, Widget? child) {
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
           themeMode: value,
           theme: AppTheme().lightTheme(),
           darkTheme: AppTheme().darkThemeData(),
-          home: Splashscreen(),
+          home: const Splashscreen(),
           // home: SizedBox(
           //   height: 200,
           //   child: VoucherContainer(),

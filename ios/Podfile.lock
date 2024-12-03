@@ -1,8 +1,6 @@
 PODS:
   - animated_rating_stars (0.0.1):
     - Flutter
-  - camera_avfoundation (0.0.1):
-    - Flutter
   - Flutter (1.0.0)
   - path_provider_foundation (0.0.1):
     - Flutter
@@ -10,15 +8,12 @@ PODS:
 
 DEPENDENCIES:
   - animated_rating_stars (from `.symlinks/plugins/animated_rating_stars/ios`)
-  - camera_avfoundation (from `.symlinks/plugins/camera_avfoundation/ios`)
   - Flutter (from `Flutter`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
 
 EXTERNAL SOURCES:
   animated_rating_stars:
     :path: ".symlinks/plugins/animated_rating_stars/ios"
-  camera_avfoundation:
-    :path: ".symlinks/plugins/camera_avfoundation/ios"
   Flutter:
     :path: Flutter
   path_provider_foundation:
@@ -26,10 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   animated_rating_stars: 4627b871e2cfeddfe811952f5b3e9dc62a9bbe46
-  camera_avfoundation: dd002b0330f4981e1bbcb46ae9b62829237459a4
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.2

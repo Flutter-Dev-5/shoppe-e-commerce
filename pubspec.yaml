@@ -43,11 +43,13 @@ dependencies:
   syncfusion_flutter_calendar: ^26.2.12
   percent_indicator: ^4.2.3
   intl_phone_field: ^3.2.0
+  cached_network_image: ^3.4.1
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  change_app_package_name: ^1.4.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
