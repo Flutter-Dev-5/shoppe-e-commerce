@@ -29,7 +29,7 @@ class WishListItemContainer extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: const DisplayImage(
-                    imageAddress: image32,
+                    imageAddress: AppAssets.image32,
                     fit: BoxFit.fill,
                   ),
                 )),
@@ -43,7 +43,7 @@ class WishListItemContainer extends StatelessWidget {
                     shape: BoxShape.circle,
                     color: theme.scaffoldBackgroundColor),
                 child: const Center(
-                  child: DisplayImage(imageAddress: deleteIconSVG),
+                  child: DisplayImage(imageAddress: AppAssets.deleteIconSVG),
                 ),
               ),
             )
@@ -98,7 +98,7 @@ class WishListItemContainer extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const DisplayImage(imageAddress: addIconSVG)
+                    const DisplayImage(imageAddress: AppAssets.addIconSVG)
                   ],
                 )
               ],

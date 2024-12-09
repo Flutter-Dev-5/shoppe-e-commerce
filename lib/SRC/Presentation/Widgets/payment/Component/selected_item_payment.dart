@@ -86,7 +86,7 @@ class SelectedItemOfPaymentDetails extends StatelessWidget {
                       children: [
                         const SizedBox(
                             height: 60,
-                            child: SmallCircularImage(imagePath: b4)),
+                            child: SmallCircularImage(imagePath: AppAssets.b4)),
                         Positioned(
                             top: 0,
                             right: 0,

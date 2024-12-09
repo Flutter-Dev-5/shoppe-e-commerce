@@ -4,16 +4,16 @@ class ShopNewItemsData {
   static final List<NewItemsModel> newItem = [
     NewItemsModel(
         "productId",
-        s1,
+        AppAssets.s1,
         "productDescriptionproductDescriptionproductDescriptionproductDescriptionproductDescription",
         "productLink",
         1700),
-    NewItemsModel("productId", s2, "productDescription", "productLink", 1700),
-    NewItemsModel("productId", s3, "productDescription", "productLink", 1700),
-    NewItemsModel("productId", s4, "productDescription", "productLink", 1700),
-    NewItemsModel("productId", b1, "productDescription", "productLink", 1700),
-    NewItemsModel("productId", fl3, "productDescription", "productLink", 1700),
-    NewItemsModel("productId", fl5, "productDescription", "productLink", 1700),
-    NewItemsModel("productId", fl2, "productDescription", "productLink", 1700),
+    NewItemsModel("productId", AppAssets.s2, "productDescription", "productLink", 1700),
+    NewItemsModel("productId", AppAssets.s3, "productDescription", "productLink", 1700),
+    NewItemsModel("productId", AppAssets.s4, "productDescription", "productLink", 1700),
+    NewItemsModel("productId", AppAssets.b1, "productDescription", "productLink", 1700),
+    NewItemsModel("productId", AppAssets.fl3, "productDescription", "productLink", 1700),
+    NewItemsModel("productId", AppAssets.fl5, "productDescription", "productLink", 1700),
+    NewItemsModel("productId", AppAssets.fl2, "productDescription", "productLink", 1700),
   ];
 }

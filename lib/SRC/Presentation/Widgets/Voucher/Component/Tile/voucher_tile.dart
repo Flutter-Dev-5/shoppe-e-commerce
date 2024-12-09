@@ -141,7 +141,7 @@ class VoucherTile extends StatelessWidget {
                                 context.back();
                               },
                               text: buttonText,
-                              fontSize: 14,
+                              textSize: 14,
                               borderRadius: 8,
                             ),
                           )

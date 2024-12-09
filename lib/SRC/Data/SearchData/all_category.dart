@@ -2,7 +2,7 @@ import 'package:tf_ecommerce/SRC/exports.dart';
 
 class AllCategoryData {
   static final List<AllCategory> allData = [
-    AllCategory(title: AppStrings.clothing, image: b1, productCategory: [
+    AllCategory(title: AppStrings.clothing, image: AppAssets.b1, productCategory: [
       "Dresses",
       "Pants",
       "Skirts",
@@ -14,7 +14,7 @@ class AllCategoryData {
       "T-Shirts",
       "Tunics",
     ]),
-    AllCategory(title: AppStrings.shoes, image: b3, productCategory: [
+    AllCategory(title: AppStrings.shoes, image: AppAssets.b3, productCategory: [
       "Dresses",
       "Pants",
       "Skirts",
@@ -26,7 +26,7 @@ class AllCategoryData {
       "T-Shirts",
       "Tunics",
     ]),
-    AllCategory(title: AppStrings.bage, image: l2, productCategory: [
+    AllCategory(title: AppStrings.bage, image: AppAssets.l2, productCategory: [
       "Dresses",
       "Pants",
       "Skirts",
@@ -38,7 +38,7 @@ class AllCategoryData {
       "T-Shirts",
       "Tunics",
     ]),
-    AllCategory(title: AppStrings.lingers, image: image21, productCategory: [
+    AllCategory(title: AppStrings.lingers, image: AppAssets.image21, productCategory: [
       "Dresses",
       "Pants",
       "Skirts",
@@ -52,7 +52,7 @@ class AllCategoryData {
     ]),
     AllCategory(
         title: AppStrings.accessories,
-        image: image23,
+        image: AppAssets.image23,
         productCategory: [
           "Dresses",
           "Pants",

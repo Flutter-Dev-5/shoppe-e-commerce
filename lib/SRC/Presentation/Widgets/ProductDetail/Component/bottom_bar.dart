@@ -31,7 +31,7 @@ class BottomBar extends StatelessWidget {
                       child: DisplayImage(
                         imageWidth: 30,
                         imageHeight: 30,
-                        imageAddress: favIcon,
+                        imageAddress: AppAssets.favIcon,
                         color: isSelectedVal
                             ? theme.primaryColorDark
                             : theme.primaryColorLight,
@@ -42,7 +42,8 @@ class BottomBar extends StatelessWidget {
             5.x,
             Flexible(
                 child: CommonButton(
-                    isLimitReached: true,
+                   // isLimitReached: true,
+                    height: 41,
                     onTap: () {},
                     text: AppStrings.addToCart)),
             5.x,

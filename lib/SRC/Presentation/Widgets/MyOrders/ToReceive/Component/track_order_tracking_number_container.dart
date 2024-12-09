@@ -41,7 +41,7 @@ class TrackOrderTrackingNumberContainer extends StatelessWidget {
             ),
             InkWell(
                 onTap: onPressed,
-                child: const DisplayImage(imageAddress: trakingIconSVG)),
+                child: const DisplayImage(imageAddress: AppAssets.trakingIconSVG)),
           ],
         ),
       ),

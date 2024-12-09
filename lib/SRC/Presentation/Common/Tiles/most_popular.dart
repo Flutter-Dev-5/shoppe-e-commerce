@@ -50,7 +50,7 @@ class MostPopularItemsTile extends StatelessWidget {
                           ),
                           2.x,
                           DisplayImage(
-                            imageAddress: heartIconSvg,
+                            imageAddress: AppAssets.heartIconSvg,
                             imageHeight: 10,
                             imageWidth: 10,
                             color: Theme.of(context).primaryColorDark,

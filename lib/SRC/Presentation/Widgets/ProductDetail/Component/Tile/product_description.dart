@@ -73,7 +73,7 @@ class ProductDescription extends StatelessWidget {
                             color: theme.indicatorColor.withOpacity(0.1),
                           ),
                           child: SvgPicture.asset(
-                            shareIconSVG,
+                            AppAssets.shareIconSVG,
                             width: 13,
                             height: 13,
                           ),
@@ -93,7 +93,7 @@ class ProductDescription extends StatelessWidget {
                         color: theme.indicatorColor.withOpacity(0.1),
                       ),
                       child: SvgPicture.asset(
-                        shareIconSVG,
+                        AppAssets.shareIconSVG,
                         width: 13,
                         height: 13,
                       ),

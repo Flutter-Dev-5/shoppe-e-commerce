@@ -35,7 +35,7 @@ class Discount extends StatelessWidget {
                   onTap: () {
                     context.to(const FilterProduct());
                   },
-                  child: const DisplayImage(imageAddress: filerIcon)),
+                  child: const DisplayImage(imageAddress: AppAssets.filerIcon)),
             ],
           ),
           10.y,

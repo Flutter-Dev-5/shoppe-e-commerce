@@ -119,7 +119,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: DisplayImage(
-                              imageAddress: atmCardImage,
+                              imageAddress: AppAssets.atmCardImage,
                               imageWidth: size.width - 100,
                             ),
                           ),

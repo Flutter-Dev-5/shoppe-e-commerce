@@ -21,7 +21,7 @@ class ProfileImage extends StatelessWidget {
           ]),
       child: ClipOval(
           child: DisplayImage(
-        imageAddress: image ?? profileImage,
+        imageAddress: image ?? AppAssets.profileImage,
         imageWidth: 91,
         imageHeight: 91,
         fit: BoxFit.cover,

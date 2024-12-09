@@ -25,7 +25,7 @@ class SmallIconContainer extends StatelessWidget {
               ? Icon(
                   iconPath,
                   size: 16,
-                  color: iconPath.toString() == appleIcon.toString()
+                  color: iconPath.toString() == AppAssets.appleIcon.toString()
                       ? Theme.of(context).primaryColorLight
                       : null,
                 )

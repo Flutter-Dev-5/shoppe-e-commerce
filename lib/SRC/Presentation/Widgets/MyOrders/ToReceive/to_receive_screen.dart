@@ -151,7 +151,7 @@ class ToReceivedScreen extends StatelessWidget {
                                                                     child: ClipRRect(
                                                                         borderRadius: BorderRadius.circular(10),
                                                                         child: Image.asset(
-                                                                          b1,
+                                                                          AppAssets.b1,
                                                                           fit: BoxFit
                                                                               .cover,
                                                                           height:
@@ -249,7 +249,7 @@ class ToReceivedScreen extends StatelessWidget {
                                               },
                                               text: AppStrings.track,
                                               borderRadius: 8,
-                                              fontSize: 14,
+                                              textSize: 14,
                                             ))
                                   ],
                                 )

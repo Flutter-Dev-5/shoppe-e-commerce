@@ -35,7 +35,7 @@ class SelectCardTile extends StatelessWidget {
                               );
                             },
                             child: DisplayImage(
-                              imageAddress: atmCardImage,
+                              imageAddress: AppAssets.atmCardImage,
                               imageWidth: size.width - 80,
                             ),
                           ),

@@ -44,7 +44,7 @@ class CustomAppBar extends StatelessWidget {
                   padding: EdgeInsets.all(4),
                   child: ClipOval(
                       child: DisplayImage(
-                          imageAddress: profileImage,
+                          imageAddress: AppAssets.profileImage,
                           imageHeight: 40,
                           imageWidth: 40)),
                 ),
@@ -110,7 +110,7 @@ class CustomAppBar extends StatelessWidget {
                       );
                     },
                     child: const SmallIconContainer(
-                      iconPath: scannerIcon,
+                      iconPath: AppAssets.scannerIcon,
                     ),
                   ),
                   InkWell(
@@ -119,7 +119,7 @@ class CustomAppBar extends StatelessWidget {
                     },
                     child: const SmallIconContainer(
                       isNotification: true,
-                      iconPath: drawerIcon,
+                      iconPath:AppAssets. drawerIcon,
                     ),
                   ),
                   InkWell(
@@ -127,7 +127,7 @@ class CustomAppBar extends StatelessWidget {
                       context.to(const Setting());
                     },
                     child: const SmallIconContainer(
-                      iconPath: settingIcon,
+                      iconPath: AppAssets.settingIcon,
                     ),
                   ),
                 ],

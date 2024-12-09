@@ -42,7 +42,7 @@ class BottomNavigation extends StatelessWidget {
             items: [
               BottomNavigationBarItem(
                 icon: SvgPicture.asset(
-                  homeIconSvg,
+                  AppAssets.homeIconSvg,
                   color: index == 0
                       ? Theme.of(context).cardColor
                       : Theme.of(context).primaryColorDark,
@@ -51,7 +51,7 @@ class BottomNavigation extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: SvgPicture.asset(
-                  favIcon,
+                  AppAssets.favIcon,
                   color: index == 1
                       ? Theme.of(context).cardColor
                       : Theme.of(context).primaryColorDark,
@@ -60,7 +60,7 @@ class BottomNavigation extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: Image.asset(
-                  categoriesPNG,
+                  AppAssets.categoriesPNG,
                   color: index == 2
                       ? Theme.of(context).cardColor
                       : Theme.of(context).primaryColorDark,
@@ -71,7 +71,7 @@ class BottomNavigation extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: SvgPicture.asset(
-                  cartIcon,
+                  AppAssets.cartIcon,
                   color: index == 3
                       ? Theme.of(context).cardColor
                       : Theme.of(context).primaryColorDark,
@@ -80,7 +80,7 @@ class BottomNavigation extends StatelessWidget {
               ),
               BottomNavigationBarItem(
                 icon: SvgPicture.asset(
-                  profileIcon,
+                  AppAssets.profileIcon,
                   color: index == 4
                       ? Theme.of(context).cardColor
                       : Theme.of(context).primaryColorDark,

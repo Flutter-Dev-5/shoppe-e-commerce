@@ -1,7 +1,9 @@
 import 'package:tf_ecommerce/SRC/Application/Utils/Extensions/responsive_extension.dart';
+import 'package:tf_ecommerce/SRC/Data/app_data/data.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
 
 void main() {
+  Data().init();
   runApp(const MyApp());
 }
 

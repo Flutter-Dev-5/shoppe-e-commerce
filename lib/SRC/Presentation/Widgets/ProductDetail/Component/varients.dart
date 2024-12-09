@@ -70,7 +70,7 @@ class VarientOfProductDetail extends StatelessWidget {
                         ),
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
-                            child: const DisplayImage(imageAddress: image33)),
+                            child: const DisplayImage(imageAddress: AppAssets.image33)),
                       ),
                       5.x,
                     ],

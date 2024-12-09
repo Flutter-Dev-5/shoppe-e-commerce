@@ -86,7 +86,7 @@ class CartItems extends StatelessWidget {
                                       ),
                                       child: const Center(
                                         child: DisplayImage(
-                                          imageAddress: cart2,
+                                          imageAddress: AppAssets.cart2,
                                           imageHeight: 80,
                                           imageWidth: 80,
                                         ),
@@ -170,10 +170,10 @@ class CartItems extends StatelessWidget {
                               child: SizedBox(
                                   height: 40,
                                   child: CommonButton(
-                                      color: isListEmpty.value
+                                      backgroundColor: isListEmpty.value
                                           ? theme.scaffoldBackgroundColor
                                           : theme.primaryColorDark,
-                                      fontSize: 16,
+                                      textSize: 16,
                                       onTap: () {
                                         isListEmpty.value = !isListEmpty.value;
                                       },

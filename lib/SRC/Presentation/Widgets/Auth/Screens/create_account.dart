@@ -1,8 +1,56 @@
+import 'package:app_links/app_links.dart';
+import 'package:tf_ecommerce/SRC/Data/app_data/app_secrets.dart';
+import 'package:tf_ecommerce/SRC/Data/app_data/data.dart';
+import 'package:tf_ecommerce/SRC/Presentation/Widgets/Auth/controller/vipps_controller.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class CreateAccount extends StatelessWidget {
+class CreateAccount extends StatefulWidget {
   const CreateAccount({super.key});
 
+  @override
+  State<CreateAccount> createState() => _CreateAccountState();
+}
+
+class _CreateAccountState extends State<CreateAccount> {
+
+  @override
+  void initState() {
+    _appLinksListeners();
+
+    // TODO: implement initState
+    super.initState();
+  }
+  Future<void> _appLinksListeners() async {
+    if(VipsController.listenerInternalAppLinks !=  null )
+    {
+      await   VipsController.listenerInternalAppLinks?.cancel();
+
+    }
+    final AppLinks appLinks = AppLinks();
+
+
+    VipsController.listenerAppLinks = appLinks.uriLinkStream.listen((uri) async {
+      String query = uri.query;
+
+      print("URI>>> $uri");
+      if (query.contains("code")) {
+        final code = uri.queryParameters;
+        print("code>>> ${code}");
+
+
+        VipsController().sendCode('https://dialog.modish.no/api/user/vippsMember/${code["code"]}?client_token=${Data().clientId}');
+
+      }
+      if (query.contains("resume_uri")) {
+        print("resume_uri>>> ${Uri.parse(Uri.decodeFull(query.split('resume_uri=').last))}");
+        await launchUrl(
+            Uri.parse(Uri.decodeFull(query.split('resume_uri=').last)));
+      } else {}
+    });
+
+    // appLinksListerner.cancel();
+  }
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -60,11 +108,11 @@ class CreateAccount extends StatelessWidget {
                       10.y,
 
                       CommonButton(
-                        color: theme.indicatorColor,
-                        onTap: () {
-                          context.pushReplacement(const SignInScreen());
-                        },
+                        backgroundColor: theme.indicatorColor,
+                        onTap:_onLoginOrRegisterVeep,
                         text: "Register deg Med",
+
+                        trailingSvg: AppAssets.vippsIcon,
                       ),
                       10.y,
                       Center(
@@ -79,5 +127,17 @@ class CreateAccount extends StatelessWidget {
             ],
           )),
     );
+  }
+
+  Future<void> _onLoginOrRegisterVeep() async {
+
+
+    print("urlllllllllloginnn");
+    print(loginUrl);
+    await launchUrl(
+      Uri.parse(loginUrl),
+      mode: LaunchMode.inAppBrowserView,
+    );
+
   }
 }

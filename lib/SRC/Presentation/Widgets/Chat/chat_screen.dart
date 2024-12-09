@@ -112,7 +112,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 ),
                                 5.x,
                                 const DisplayImage(
-                                  imageAddress: categoriesPNG,
+                                  imageAddress:AppAssets.categoriesPNG,
                                   imageHeight: 25,
                                   imageWidth: 25,
                                 )

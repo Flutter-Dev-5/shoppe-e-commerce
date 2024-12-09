@@ -35,7 +35,7 @@ class RewardAnnouncement extends StatelessWidget {
                     ),
                     child: Center(
                       child: DisplayImage(
-                        imageAddress: favIconColoredSVG,
+                        imageAddress: AppAssets.favIconColoredSVG,
                         color: theme.primaryColorDark,
                       ),
                     ),

@@ -13,7 +13,7 @@ class JustForYouTileFilter extends StatelessWidget {
         child: Row(
           children: [
             Image.asset(
-              image22,
+              AppAssets.image22,
               width: 60,
               height: 50,
               fit: BoxFit.fill,

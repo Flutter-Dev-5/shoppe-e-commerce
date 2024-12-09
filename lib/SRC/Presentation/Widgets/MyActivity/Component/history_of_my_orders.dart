@@ -159,7 +159,7 @@ class HistoryOfMyOrders extends StatelessWidget {
                                                 context.back();
                                               },
 
-                                              icon: profileImage,
+                                              icon: AppAssets.profileImage,
                                             );
                                           },
                                         );

@@ -49,7 +49,7 @@ class WishList extends StatelessWidget {
                                 height: size.height / 2.6,
                                 child: const Center(
                                   child: DisplayImage(
-                                      imageAddress: emptyWishListSVG),
+                                      imageAddress: AppAssets.emptyWishListSVG),
                                 ),
                               ),
                             )

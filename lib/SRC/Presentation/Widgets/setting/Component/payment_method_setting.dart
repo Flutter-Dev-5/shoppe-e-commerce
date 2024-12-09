@@ -78,7 +78,7 @@ class PaymentMethodSetting extends StatelessWidget {
                                   Row(
                                     children: [
                                       const DisplayImage(
-                                        imageAddress: cart2,
+                                        imageAddress: AppAssets.cart2,
                                         imageHeight: 25,
                                         imageWidth: 25,
                                       ),

@@ -19,7 +19,7 @@ class ArrowBack extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: SvgPicture.asset(
-            arrowBack,
+            AppAssets.arrowBack,
             width: 5,
             height: 5,
             color: Theme.of(context).primaryColorLight,

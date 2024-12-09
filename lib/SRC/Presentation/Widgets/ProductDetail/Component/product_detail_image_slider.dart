@@ -14,14 +14,14 @@ class _ProductDetailImageSliderState extends State<ProductDetailImageSlider> {
   Timer? _timer;
 
   final List<String> _images = [
-    image31,
-    image11,
-    image13,
-    image15,
-    image31,
-    image11,
-    image13,
-    image15,
+   AppAssets.image31,
+   AppAssets.image11,
+   AppAssets.image13,
+   AppAssets.image15,
+   AppAssets.image31,
+   AppAssets.image11,
+   AppAssets.image13,
+   AppAssets.image15,
   ];
 
   // @override

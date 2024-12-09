@@ -22,7 +22,7 @@ class ArticleRemaining extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: DisplayImage(
-                imageAddress: b1,
+                imageAddress: AppAssets.b1,
                 fit: BoxFit.fitWidth,
                 imageWidth: size.width,
                 imageHeight: 140,

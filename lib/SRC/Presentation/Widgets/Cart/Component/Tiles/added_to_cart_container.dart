@@ -34,7 +34,7 @@ class AddedToCartContainer extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: const DisplayImage(
-                        imageAddress: image31,
+                        imageAddress: AppAssets.image31,
                         fit: BoxFit.fill,
                       ),
                     )),
@@ -48,7 +48,7 @@ class AddedToCartContainer extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: theme.scaffoldBackgroundColor),
                     child: const Center(
-                      child: DisplayImage(imageAddress: deleteIconSVG),
+                      child: DisplayImage(imageAddress:AppAssets. deleteIconSVG),
                     ),
                   ),
                 )

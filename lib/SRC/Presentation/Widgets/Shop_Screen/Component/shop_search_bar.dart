@@ -33,7 +33,7 @@ class ShopSearchBar extends StatelessWidget {
                     ),
                     hintStyle: Theme.of(context).textTheme.labelLarge,
                     hintText: "Search",
-                    suffix: SvgPicture.asset(cameraIconSVG)),
+                    suffix: SvgPicture.asset(AppAssets.cameraIconSVG)),
               ),
             ),
           ],

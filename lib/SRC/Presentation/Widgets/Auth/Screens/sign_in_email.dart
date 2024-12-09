@@ -34,7 +34,7 @@ class SignInScreen extends StatelessWidget {
                     ),
                     5.x,
                     SvgPicture.asset(
-                      heartIconSvg,
+                      AppAssets.heartIconSvg,
                       width: 15,
                       height: 15,
                     )

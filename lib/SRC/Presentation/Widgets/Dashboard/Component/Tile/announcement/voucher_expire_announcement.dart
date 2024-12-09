@@ -35,7 +35,7 @@ class VoucherExpireAnnouncement extends StatelessWidget {
                   child: DisplayImage(
                     imageWidth: 20,
                     imageHeight: 20,
-                    imageAddress: pinkColorCartSVG,
+                    imageAddress: AppAssets.pinkColorCartSVG,
                   ),
                 ),
               ),

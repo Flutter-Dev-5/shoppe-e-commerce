@@ -65,7 +65,7 @@ class RatingAndReviews extends StatelessWidget {
           10.y,
           CommentContainer(
             ratingValue: ratingValue.value,
-            imagePath: image33,
+            imagePath: AppAssets.image33,
             userComment: AppStrings.dummy,
             userName: "Veronika",
           ),

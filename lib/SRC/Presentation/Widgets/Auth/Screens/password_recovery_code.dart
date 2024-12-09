@@ -52,7 +52,8 @@ class PasswordRecoveryCode extends StatelessWidget {
                       context.to(const SetupNewPassword());
                     },
                     text: AppStrings.sendAgain,
-                    isRecoveryButton: true,
+                    backgroundColor: Theme.of(context).indicatorColor,
+                    //isRecoveryButton: true,
                   ),
                 ),
                 20.y,

@@ -5,10 +5,10 @@ class ToReceivedOrderData {
     ToReceivedOrderModel(
         AppStrings.standardDelivery,
         [
-          b1,
-          b2,
-          b3,
-          l1,
+         AppAssets.b1,
+         AppAssets.b2,
+         AppAssets.b3,
+         AppAssets.l1,
         ],
         4,
         9889878,
@@ -16,10 +16,10 @@ class ToReceivedOrderData {
     ToReceivedOrderModel(
         AppStrings.standardDelivery,
         [
-          b1,
-          b2,
-          b3,
-          l1,
+          AppAssets.b1,
+          AppAssets.b2,
+          AppAssets.b3,
+          AppAssets.l1,
         ],
         4,
         67456234,
@@ -27,10 +27,10 @@ class ToReceivedOrderData {
     ToReceivedOrderModel(
         AppStrings.standardDelivery,
         [
-          b1,
-          b2,
-          b3,
-          l1,
+         AppAssets. b1,
+         AppAssets. b2,
+         AppAssets. b3,
+         AppAssets. l1,
         ],
         4,
         9889878,
@@ -38,10 +38,10 @@ class ToReceivedOrderData {
     ToReceivedOrderModel(
         AppStrings.standardDelivery,
         [
-          b1,
-          b2,
-          b3,
-          l1,
+        AppAssets.  b1,
+        AppAssets.  b2,
+        AppAssets.  b3,
+        AppAssets.  l1,
         ],
         4,
         43543534,
@@ -49,10 +49,10 @@ class ToReceivedOrderData {
     ToReceivedOrderModel(
         AppStrings.standardDelivery,
         [
-          b1,
-          b2,
-          b3,
-          l1,
+        AppAssets.  b1,
+        AppAssets.  b2,
+        AppAssets.  b3,
+        AppAssets.  l1,
         ],
         4,
         6745343,
@@ -60,10 +60,10 @@ class ToReceivedOrderData {
     ToReceivedOrderModel(
         AppStrings.standardDelivery,
         [
-          b1,
-          b2,
-          b3,
-          l1,
+       AppAssets.  b1,
+       AppAssets.  b2,
+       AppAssets.  b3,
+       AppAssets.  l1,
         ],
         4,
         2343545,
@@ -71,10 +71,10 @@ class ToReceivedOrderData {
     ToReceivedOrderModel(
         AppStrings.standardDelivery,
         [
-          b1,
-          b2,
-          b3,
-          l1,
+        AppAssets.  b1,
+        AppAssets.  b2,
+        AppAssets.  b3,
+        AppAssets.  l1,
         ],
         4,
         2343545,

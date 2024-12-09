@@ -3,28 +3,28 @@ import 'package:tf_ecommerce/SRC/exports.dart';
 class CategoryDataHomeScreen {
   static final List<Category> categories = [
     Category(name: "Clothing", itemCount: 109, imageUrl: [
-      c1,
-      c2,
-      c3,
-      c4,
+      AppAssets.c1,
+      AppAssets.c2,
+      AppAssets.c3,
+      AppAssets.c4,
     ]),
     Category(name: "Shoes", itemCount: 530, imageUrl: [
-      s1,
-      s2,
-      s3,
-      s4,
+     AppAssets. s1,
+     AppAssets. s2,
+     AppAssets. s3,
+     AppAssets. s4,
     ]),
     Category(name: "Bags", itemCount: 87, imageUrl: [
-      b1,
-      b2,
-      b3,
-      b4,
+    AppAssets.  b1,
+    AppAssets.  b2,
+    AppAssets.  b3,
+    AppAssets.  b4,
     ]),
     Category(name: "Lingerie", itemCount: 218, imageUrl: [
-      l1,
-      l2,
-      l3,
-      l4,
+    AppAssets.  l1,
+    AppAssets.  l2,
+    AppAssets.  l3,
+    AppAssets.  l4,
     ]),
   ];
 }

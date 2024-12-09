@@ -51,7 +51,7 @@ class PaymentBottomBar extends StatelessWidget {
                         );
                       },
                       text: AppStrings.pay,
-                      isLimitReached: true,
+                    //  isLimitReached: true,
                     )),
               )
             ],

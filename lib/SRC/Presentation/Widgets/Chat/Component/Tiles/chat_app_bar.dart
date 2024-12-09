@@ -14,7 +14,7 @@ class ChatAppBar extends StatelessWidget {
             width: 40,
             height: 40,
             child: ProfileImage(
-              image: emptyCart,
+              image: AppAssets.emptyCart,
             ),
           ),
           5.x,

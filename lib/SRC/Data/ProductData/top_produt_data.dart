@@ -2,12 +2,12 @@ import 'package:tf_ecommerce/SRC/exports.dart';
 
 class TopProductData {
   static List<TopProductModel> topProduct = [
-    TopProductModel(b1, "productLink"),
-    TopProductModel(b2, "productLink"),
-    TopProductModel(l1, "productLink"),
-    TopProductModel(l2, "productLink"),
-    TopProductModel(fl1, "productLink"),
-    TopProductModel(fl2, "productLink"),
-    TopProductModel(js1, "productLink"),
+    TopProductModel(AppAssets.b1, "productLink"),
+    TopProductModel(AppAssets.b2, "productLink"),
+    TopProductModel(AppAssets.l1, "productLink"),
+    TopProductModel(AppAssets.l2, "productLink"),
+    TopProductModel(AppAssets.fl1, "productLink"),
+    TopProductModel(AppAssets.fl2, "productLink"),
+    TopProductModel(AppAssets.js1, "productLink"),
   ];
 }

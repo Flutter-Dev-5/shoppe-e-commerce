@@ -63,7 +63,7 @@ class CommonChatContainer extends StatelessWidget {
                         width: 50,
                         height: 50,
                         child: ProfileImage(
-                          image: profileImage,
+                          image: AppAssets.profileImage,
                         ),
                       ),
                     ],
@@ -174,7 +174,7 @@ class CommonChatContainer extends StatelessWidget {
                 width: 50,
                 height: 50,
                 child: ProfileImage(
-                  image: profileImage,
+                  image: AppAssets.profileImage,
                 ),
               ),
             ],

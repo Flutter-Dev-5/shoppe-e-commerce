@@ -28,7 +28,7 @@ class Splashscreen extends StatelessWidget {
               ),
               150.y,
               CommonButton(
-                color: theme.primaryColorDark,
+                backgroundColor: theme.primaryColorDark,
                 onTap: () {
                   Navigator.pushReplacement(
                       context,
@@ -36,6 +36,7 @@ class Splashscreen extends StatelessWidget {
                           builder: (context) => const CreateAccount()));
                 },
                 text: AppStrings.getStarted,
+
               ),
               30.y,
               Row(
