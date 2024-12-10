@@ -19,9 +19,11 @@ class ButtonsOfFilter extends StatelessWidget {
         5.x,
         Expanded(
             flex: 5,
-            child: SizedBox(
+            child: CommonButton(
                 height: 50,
-                child: CommonButton(onTap: () {}, text: AppStrings.apply)))
+                borderRadius: 15,
+                onTap: () {},
+                text: AppStrings.apply))
       ],
     );
   }

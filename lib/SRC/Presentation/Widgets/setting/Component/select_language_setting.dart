@@ -24,6 +24,7 @@ class SelectLanguageSetting extends StatelessWidget {
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      1.stB.y,
                       AppText(
                         text: AppStrings.setting,
                         style: theme.textTheme.displayMedium,

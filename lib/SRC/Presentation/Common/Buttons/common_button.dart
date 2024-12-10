@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:tf_ecommerce/SRC/Presentation/Common/app_icon_handler.dart';
 import 'package:tf_ecommerce/SRC/Presentation/Common/text_widget.dart';
 
-
 class CommonButton extends StatelessWidget {
   const CommonButton({
     this.style,
@@ -21,7 +20,7 @@ class CommonButton extends StatelessWidget {
     this.borderThickness = 1,
     this.width,
     this.height = 56,
-    this.borderRadius = 24,
+    this.borderRadius = 15,
     this.boxShape = BoxShape.rectangle,
     this.mainAxisAlignment = MainAxisAlignment.center,
     this.crossAxisAlignment = CrossAxisAlignment.center,
@@ -91,9 +90,9 @@ class CommonButton extends StatelessWidget {
       decoration: BoxDecoration(
         border: borderColor != null
             ? Border.all(
-          color: borderColor!,
-          width: borderThickness,
-        )
+                color: borderColor!,
+                width: borderThickness,
+              )
             : null,
         shape: boxShape,
         borderRadius: boxShape == BoxShape.circle
@@ -122,24 +121,24 @@ class CommonButton extends StatelessWidget {
             ),
             centerIcon != null
                 ? Icon(
-              centerIcon,
-              color: centerIconColor ?? themeData.colorScheme.background,
-              size: centerIconSize,
-            )
+                    centerIcon,
+                    color: centerIconColor ?? themeData.colorScheme.background,
+                    size: centerIconSize,
+                  )
                 : AppText(
-             text:  text,
-              style: style ??
-                  TextStyle(
-                    color: (textColor == null &&
-                        Theme.of(context).brightness ==
-                            Brightness.dark)
-                        ? Theme.of(context).colorScheme.onBackground
-                        : textColor ??
-                        Theme.of(context).colorScheme.background,
-                    fontWeight: textFontWeight,
-                    fontSize: textSize,
+                    text: text,
+                    style: style ??
+                        TextStyle(
+                          color: (textColor == null &&
+                                  Theme.of(context).brightness ==
+                                      Brightness.dark)
+                              ? Theme.of(context).colorScheme.onBackground
+                              : textColor ??
+                                  Theme.of(context).colorScheme.background,
+                          fontWeight: textFontWeight,
+                          fontSize: textSize,
+                        ),
                   ),
-            ),
             DynamicAppIconHandler.buildIcon(
               context: context,
               icon: trailingIcon,

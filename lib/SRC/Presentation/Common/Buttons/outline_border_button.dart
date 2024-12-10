@@ -24,15 +24,14 @@ class OutlineBorderButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(outlinedRadius),
-            border:
-                Border.all(color: theme.primaryColorDark, width: borderRadius)),
+            border: Border.all(color: theme.cardColor, width: borderRadius)),
         height: 50,
         child: Center(
           child: AppText(
             text: text,
             style: theme.textTheme.displayMedium!.copyWith(
                 fontWeight: FontWeight.w300,
-                color: theme.primaryColorDark,
+                // color: theme.primaryColorDark,
                 fontSize: fontSize),
           ),
         ),

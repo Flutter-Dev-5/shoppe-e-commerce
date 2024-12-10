@@ -1,4 +1,3 @@
-import 'package:tf_ecommerce/SRC/Presentation/Common/Backgrounds/bubble_2.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -7,11 +6,12 @@ class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.sizeOf(context);
+    final theme = Theme.of(context);
     return Scaffold(
         body: SingleChildScrollView(
       child: Stack(
         children: [
-          const BubbleTwo(),
+          // const BubbleTwo(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 23),
             child: Column(
@@ -19,18 +19,18 @@ class SignInScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: size.height * 0.5,
+                  height: size.height * 0.4,
                 ),
                 AppText(
                   text: AppStrings.login,
-                  style: Theme.of(context).textTheme.headlineLarge,
+                  style: theme.textTheme.headlineLarge,
                 ),
                 10.y,
                 Row(
                   children: [
                     AppText(
                       text: AppStrings.goodToSeeYouBack,
-                      style: Theme.of(context).textTheme.headlineSmall,
+                      style: theme.textTheme.headlineSmall,
                     ),
                     5.x,
                     SvgPicture.asset(
@@ -54,6 +54,21 @@ class SignInScreen extends StatelessWidget {
                             builder: (context) => const PasswordScreen()));
                   },
                   text: AppStrings.next,
+                ),
+                10.y,
+                Center(
+                  child: AppText(
+                    text: AppStrings.or,
+                    style: theme.textTheme.displayMedium,
+                  ),
+                ),
+                10.y,
+                CommonButton(
+                  backgroundColor: theme.indicatorColor,
+                  onTap: () {
+                    context.pushReplacement(const SignInScreen());
+                  },
+                  text: AppStrings.registerDegMed,
                 ),
                 20.y,
                 Align(

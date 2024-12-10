@@ -1,8 +1,4 @@
-import 'package:tf_ecommerce/SRC/Presentation/Widgets/payment/component/Tile/text_input_field.dart';
-import 'package:tf_ecommerce/SRC/exports.dart';
-
-class EditAddressTile extends StatelessWidget {
-  EditAddressTile({super.key});
+itAddressTile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -50,14 +46,11 @@ class EditAddressTile extends StatelessWidget {
             controller: TextEditingController(),
           ),
           20.y,
-          SizedBox(
-            height: 50,
-            child: CommonButton(
-                onTap: () {
-                  context.back();
-                },
-                text: AppStrings.saveChanges),
-          ),
+          CommonButton(
+              onTap: () {
+                context.back();
+              },
+              text: AppStrings.saveChanges),
           40.y,
         ],
       ),

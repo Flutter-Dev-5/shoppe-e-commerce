@@ -34,8 +34,8 @@ class VoucherTile extends StatelessWidget {
               child: VoucherContainer(
                 isSelected: isNearExpire,
                 containerWidget: Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 15.0, vertical: 10),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 15.0, vertical: 6),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -110,42 +110,51 @@ class VoucherTile extends StatelessWidget {
                             ? theme.indicatorColor.withOpacity(0.6)
                             : theme.primaryColorDark,
                       ),
-                      10.y,
-                      Row(
-                        children: [
-                          DisplayImage(
-                            imageAddress: voucherImage,
-                            imageWidth: 20,
-                            imageHeight: 20,
-                          ),
-                          5.x,
-                          AppText(
-                            text: voucherTitle,
-                            style: theme.textTheme.titleMedium!.copyWith(
-                                fontWeight: FontWeight.w600, fontSize: 14),
-                          )
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Flexible(
-                              child: AppText(
-                            text: "$voucherDiscount% off for your next Order",
-                            style: theme.textTheme.titleSmall,
-                          )),
-                          SizedBox(
-                            height: 25,
-                            child: CommonButton(
+                      5.y,
+                      Flexible(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Row(
+                                  children: [
+                                    DisplayImage(
+                                      imageAddress: voucherImage,
+                                      imageWidth: 20,
+                                      imageHeight: 20,
+                                      color: const Color(0xff83B49D),
+                                    ),
+                                    5.x,
+                                    AppText(
+                                      text: voucherTitle,
+                                      style: theme.textTheme.titleMedium!
+                                          .copyWith(
+                                              fontWeight: FontWeight.w600,
+                                              fontSize: 14),
+                                    )
+                                  ],
+                                ),
+                                AppText(
+                                  text:
+                                      "$voucherDiscount% off for your next Order",
+                                  style: theme.textTheme.titleSmall,
+                                ),
+                              ],
+                            ),
+                            CommonButton(
+                              height: 35,
                               onTap: () {
                                 context.back();
                               },
                               text: buttonText,
                               textSize: 14,
                               borderRadius: 8,
-                            ),
-                          )
-                        ],
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),

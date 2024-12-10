@@ -6,6 +6,7 @@ export 'package:flutter/material.dart';
 export 'package:flutter_quick_router/Routers/quick_routes.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:google_fonts/google_fonts.dart';
+export 'package:tf_ecommerce/SRC/Application/Utils/Extensions/responsive_extension.dart';
 export 'package:tf_ecommerce/SRC/Application/Utils/Extensions/sized_box.dart';
 export 'package:tf_ecommerce/SRC/Data/ProductData/ChatData/chat_data_user_side.dart';
 export 'package:tf_ecommerce/SRC/Data/ProductData/FilterData/select_product_category_data.dart';

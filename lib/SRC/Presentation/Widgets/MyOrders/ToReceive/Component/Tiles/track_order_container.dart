@@ -35,7 +35,7 @@ class TrackOrderContainer extends StatelessWidget {
                           softWrap: true,
                           overflow: TextOverflow.ellipsis,
                         ),
-                        SelectedMarkContainer(
+                        const SelectedMarkContainer(
                             width: 20, height: 20, iconSize: 18),
                       ],
                     )

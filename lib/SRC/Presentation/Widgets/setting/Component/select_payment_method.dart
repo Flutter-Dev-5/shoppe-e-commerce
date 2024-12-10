@@ -99,15 +99,13 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                         ],
                                       ),
                                       20.y,
-                                      SizedBox(
-                                          height: 40,
-                                          child: CommonButton(
-                                            onTap: () {
-                                              context.back();
-                                            },
-                                            text: AppStrings.saveChanges,
-                                            borderRadius: 10,
-                                          ))
+                                      CommonButton(
+                                        onTap: () {
+                                          context.back();
+                                        },
+                                        text: AppStrings.saveChanges,
+                                        borderRadius: 10,
+                                      )
                                     ],
                                   ),
                                 ),
@@ -210,17 +208,14 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                               ],
                                             ),
                                             20.y,
-                                            SizedBox(
-                                                height: 40,
-                                                child: CommonButton(
-                                                  onTap: () {
-                                                    count.value =
-                                                        count.value + 1;
-                                                    context.back();
-                                                  },
-                                                  text: AppStrings.saveChanges,
-                                                  borderRadius: 10,
-                                                ))
+                                            CommonButton(
+                                              onTap: () {
+                                                count.value = count.value + 1;
+                                                context.back();
+                                              },
+                                              text: AppStrings.saveChanges,
+                                              borderRadius: 10,
+                                            )
                                           ],
                                         ),
                                       ),
@@ -247,7 +242,7 @@ class SelectPaymentMethodCard extends StatelessWidget {
                                   ),
                                 ),
                               )
-                            : SizedBox.shrink(),
+                            : const SizedBox.shrink(),
                       ],
                     );
                   });

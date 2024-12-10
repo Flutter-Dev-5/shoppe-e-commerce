@@ -11,7 +11,7 @@ class SetupNewPassword extends StatelessWidget {
         body: SingleChildScrollView(
       child: Stack(
         children: [
-          const Bubble(),
+          // const Bubble(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(

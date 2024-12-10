@@ -18,6 +18,7 @@ class PaymentScreen extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
+              1.stB.y,
               Padding(
                 padding: const EdgeInsets.only(left: 20.0, right: 20),
                 child: SizedBox(

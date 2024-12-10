@@ -1,3 +1,4 @@
+import 'package:tf_ecommerce/SRC/Presentation/Widgets/Dashboard/Component/Tile/timer_container.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
 
 class FlashSaleHeading extends StatelessWidget {
@@ -46,49 +47,16 @@ class FlashSaleHeading extends StatelessWidget {
                     color: theme.primaryColorDark,
                   ),
                   5.x,
-                  Container(
-                    width: 30,
-                    height: 30,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: theme.canvasColor,
-                    ),
-                    child: Center(
-                      child: AppText(
-                        text: "00",
-                        style: theme.textTheme.titleMedium,
-                      ),
-                    ),
+                  const TimerContainer(
+                    time: "00",
                   ),
                   2.x,
-                  Container(
-                    width: 30,
-                    height: 30,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: theme.canvasColor,
-                    ),
-                    child: Center(
-                      child: AppText(
-                        text: "36",
-                        style: theme.textTheme.titleMedium,
-                      ),
-                    ),
+                  const TimerContainer(
+                    time: "36",
                   ),
                   2.x,
-                  Container(
-                    width: 30,
-                    height: 30,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: theme.canvasColor,
-                    ),
-                    child: Center(
-                      child: AppText(
-                        text: "58",
-                        style: theme.textTheme.titleMedium,
-                      ),
-                    ),
+                  const TimerContainer(
+                    time: "58",
                   ),
                 ],
               )
@@ -100,49 +68,16 @@ class FlashSaleHeading extends StatelessWidget {
                         color: theme.scaffoldBackgroundColor,
                       ),
                       5.x,
-                      Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: theme.scaffoldBackgroundColor,
-                        ),
-                        child: Center(
-                          child: AppText(
-                            text: "00",
-                            style: theme.textTheme.titleMedium,
-                          ),
-                        ),
+                      const TimerContainer(
+                        time: "00",
                       ),
                       2.x,
-                      Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: theme.scaffoldBackgroundColor,
-                        ),
-                        child: Center(
-                          child: AppText(
-                            text: "36",
-                            style: theme.textTheme.titleMedium,
-                          ),
-                        ),
+                      const TimerContainer(
+                        time: "36",
                       ),
                       2.x,
-                      Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: theme.scaffoldBackgroundColor,
-                        ),
-                        child: Center(
-                          child: AppText(
-                            text: "58",
-                            style: theme.textTheme.titleMedium,
-                          ),
-                        ),
+                      const TimerContainer(
+                        time: "58",
                       ),
                     ],
                   )
@@ -153,49 +88,16 @@ class FlashSaleHeading extends StatelessWidget {
                         color: theme.primaryColorDark,
                       ),
                       5.x,
-                      Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: theme.unselectedWidgetColor,
-                        ),
-                        child: Center(
-                          child: AppText(
-                            text: "00",
-                            style: theme.textTheme.titleMedium,
-                          ),
-                        ),
+                      const TimerContainer(
+                        time: "00",
                       ),
                       2.x,
-                      Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: theme.unselectedWidgetColor,
-                        ),
-                        child: Center(
-                          child: AppText(
-                            text: "36",
-                            style: theme.textTheme.titleMedium,
-                          ),
-                        ),
+                      const TimerContainer(
+                        time: "36",
                       ),
                       2.x,
-                      Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: theme.unselectedWidgetColor,
-                        ),
-                        child: Center(
-                          child: AppText(
-                            text: "58",
-                            style: theme.textTheme.titleMedium,
-                          ),
-                        ),
+                      const TimerContainer(
+                        time: "58",
                       ),
                     ],
                   ),

@@ -5,12 +5,10 @@ class OrderButtonMyActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-        height: 50,
-        child: CommonButton(
-            onTap: () {
-              context.to(const HistoryOfMyOrders());
-            },
-            text: AppStrings.orderHistory));
+    return CommonButton(
+        onTap: () {
+          context.to(const HistoryOfMyOrders());
+        },
+        text: AppStrings.orderHistory);
   }
 }

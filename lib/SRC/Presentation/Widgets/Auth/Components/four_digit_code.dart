@@ -1,3 +1,4 @@
+import 'package:flutter/services.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
 
 class FourDigitCodeInput extends StatefulWidget {
@@ -29,9 +30,10 @@ class _FourDigitCodeInputState extends State<FourDigitCodeInput> {
   void _nextField(String value, int index) {
     if (value.length == 1 && index < 3) {
       _focusNodes[index + 1].requestFocus();
-    } else if (value.length == 0 && index > 0) {
+    } else if (value.isEmpty && index > 0) {
       _focusNodes[index - 1].requestFocus();
     }
+    setState(() {}); // Update the UI to reflect the changes in input
   }
 
   @override
@@ -40,26 +42,44 @@ class _FourDigitCodeInputState extends State<FourDigitCodeInput> {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: List.generate(4, (index) {
         return SizedBox(
-          width: 49,
-          height: 50,
-          child: TextFormField(
-            controller: _controllers[index],
-            focusNode: _focusNodes[index],
-            keyboardType: TextInputType.number,
-            textAlign: TextAlign.center,
-            maxLength: 1,
-            style: Theme.of(context).textTheme.headlineMedium,
-            decoration: InputDecoration(
-              counterText: "",
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
-                borderSide: const BorderSide(width: 0, style: BorderStyle.none),
+          width: 25,
+          height: 25,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: _controllers[index].text.isNotEmpty
+                      ? Theme.of(context).indicatorColor // Black when filled
+                      : Theme.of(context).shadowColor, // Light grey when empty
+                ),
               ),
-              filled: true,
-              contentPadding: const EdgeInsets.all(16),
-              fillColor: Theme.of(context).canvasColor,
-            ),
-            onChanged: (value) => _nextField(value, index),
+              TextFormField(
+                showCursor: false,
+                controller: _controllers[index],
+                focusNode: _focusNodes[index],
+                keyboardType: TextInputType.number,
+                textAlign: TextAlign.center,
+                maxLength: 1,
+                style: const TextStyle(
+                  fontSize: 20, // Hidden text style
+                  color: Colors.transparent, // Make input text invisible
+                ),
+                decoration: InputDecoration(
+                  counterText: "",
+                  border: InputBorder.none, // Remove border
+                  focusedBorder: InputBorder.none, // Remove focus indicator
+                  enabledBorder: InputBorder.none, // Remove enabled border
+                  contentPadding: const EdgeInsets.all(0),
+                ),
+                onChanged: (value) => _nextField(value, index),
+                inputFormatters: [
+                  FilteringTextInputFormatter.digitsOnly,
+                  LengthLimitingTextInputFormatter(1),
+                ],
+              ),
+            ],
           ),
         );
       }),

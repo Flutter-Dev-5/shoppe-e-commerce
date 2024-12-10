@@ -57,6 +57,7 @@ class CustomAppBar extends StatelessWidget {
                     style: Theme.of(context).textTheme.displayMedium,
                   )
                 : Flexible(
+                    flex: 2,
                     child: isHomePage
                         ? InkWell(
                             onTap: () {
@@ -95,44 +96,51 @@ class CustomAppBar extends StatelessWidget {
                             ],
                           ),
                   ),
+            isMyActivity || !isHomePage
+                ? Flexible(
+                    flex: 1,
+                    child: Container(),
+                  )
+                : const SizedBox(),
             30.x,
             Flexible(
+                flex: 2,
                 child: SizedBox(
-              height: 37,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  InkWell(
-                    onTap: () {
-                      context.to(
-                        const FilterProduct(),
-                      );
-                    },
-                    child: const SmallIconContainer(
-                      iconPath: AppAssets.scannerIcon,
-                    ),
+                  height: 37,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          context.to(
+                            const FilterProduct(),
+                          );
+                        },
+                        child: const SmallIconContainer(
+                          iconPath: AppAssets.scannerIcon,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          context.to(const ChatScreen());
+                        },
+                        child: const SmallIconContainer(
+                          isNotification: true,
+                          iconPath: AppAssets.drawerIcon,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          context.to(const Setting());
+                        },
+                        child: const SmallIconContainer(
+                          iconPath: AppAssets.settingIcon,
+                        ),
+                      ),
+                    ],
                   ),
-                  InkWell(
-                    onTap: () {
-                      context.to(const ChatScreen());
-                    },
-                    child: const SmallIconContainer(
-                      isNotification: true,
-                      iconPath:AppAssets. drawerIcon,
-                    ),
-                  ),
-                  InkWell(
-                    onTap: () {
-                      context.to(const Setting());
-                    },
-                    child: const SmallIconContainer(
-                      iconPath: AppAssets.settingIcon,
-                    ),
-                  ),
-                ],
-              ),
-            ))
+                ))
           ],
         ),
       ),
