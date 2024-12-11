@@ -1,3 +1,4 @@
+import 'package:tf_ecommerce/SRC/Application/Utils/Extensions/responsive_extension.dart';
 import 'package:tf_ecommerce/SRC/Data/ProductData/ProductDetail/you_might_like_data.dart';
 import 'package:tf_ecommerce/SRC/Presentation/Widgets/FilterProducts/component/you_might_like_it.dart';
 import 'package:tf_ecommerce/SRC/Presentation/Widgets/ProductDetail/component/Tile/product_description.dart';
@@ -26,7 +27,7 @@ class ProductDetail extends StatelessWidget {
           body: Column(
         children: [
           SizedBox(
-            height: size.height - 60,
+            height: size.height - 90.h,
             child: CustomScrollView(
               slivers: [
                 SliverAppBar(

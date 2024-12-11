@@ -24,6 +24,7 @@ class SelectSizesSetting extends StatelessWidget {
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      1.stB.y,
                       AppText(
                         text: AppStrings.setting,
                         style: theme.textTheme.displayMedium,
@@ -62,7 +63,6 @@ class SelectSizesSetting extends StatelessWidget {
                           selectedSizes.value = 3;
                         },
                       ),
-                      10.y,
                       10.y,
                     ],
                   );

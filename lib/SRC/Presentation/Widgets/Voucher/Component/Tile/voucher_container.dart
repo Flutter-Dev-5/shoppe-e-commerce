@@ -30,7 +30,7 @@ class VoucherBorderPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = const Color(0xff004CFF)
+      ..color = const Color(0xff83B49D)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2.0;
 

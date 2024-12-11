@@ -144,7 +144,7 @@ class _VoucherState extends State<Voucher> {
                                     },
                                   )),
                             ))
-                          : SizedBox.shrink(),
+                          : const SizedBox.shrink(),
                 ],
               );
             }),

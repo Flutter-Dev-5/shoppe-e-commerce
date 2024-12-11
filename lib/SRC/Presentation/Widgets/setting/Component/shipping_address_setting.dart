@@ -124,13 +124,10 @@ class ShippingAddressSetting extends StatelessWidget {
                           hintText: AppStrings.required,
                           controller: TextEditingController()),
                       40.y,
-                      SizedBox(
-                        height: 40,
-                        child: CommonButton(
-                            borderRadius: 10,
-                            onTap: () {},
-                            text: AppStrings.saveChanges),
-                      )
+                      CommonButton(
+                          borderRadius: 10,
+                          onTap: () {},
+                          text: AppStrings.saveChanges)
                     ],
                   ),
                 )

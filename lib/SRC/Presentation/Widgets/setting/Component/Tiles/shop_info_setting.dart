@@ -35,7 +35,7 @@ class ShopInfo extends StatelessWidget {
             child: Row(
               children: [
                 AppText(
-                  text: "Pakistan",
+                  text: "Norway",
                   style: theme.textTheme.titleSmall!.copyWith(fontSize: 13),
                 ),
                 10.x,

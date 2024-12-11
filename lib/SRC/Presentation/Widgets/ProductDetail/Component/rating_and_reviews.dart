@@ -70,13 +70,12 @@ class RatingAndReviews extends StatelessWidget {
             userName: "Veronika",
           ),
           20.y,
-          SizedBox(
-              height: 50,
-              child: CommonButton(
-                  onTap: () {
-                    context.to(const ViewAllReviews());
-                  },
-                  text: AppStrings.viewAllReviews)),
+          CommonButton(
+              borderRadius: 15,
+              onTap: () {
+                context.to(const ViewAllReviews());
+              },
+              text: AppStrings.viewAllReviews),
           10.y,
           const HomePageMostPopular(
             padding: 0,

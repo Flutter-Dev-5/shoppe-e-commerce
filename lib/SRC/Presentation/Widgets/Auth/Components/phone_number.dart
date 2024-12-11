@@ -39,12 +39,12 @@ class _PhoneNumberState extends State<PhoneNumber> {
             borderRadius: BorderRadius.all(
               Radius.circular(widget.radius),
             )),
-        prefix: CountryCodePicker(
+        prefixIcon: CountryCodePicker(
           padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 8),
           showDropDownButton: true,
-          flagWidth: 18,
+          flagWidth: 25,
           onChanged: print,
-          initialSelection: 'PK',
+          initialSelection: 'NO',
           showFlagMain: true,
           showCountryOnly: true,
           barrierColor: Theme.of(context).canvasColor,

@@ -167,17 +167,16 @@ class CartItems extends StatelessWidget {
                             return Padding(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 20.0),
-                              child: SizedBox(
-                                  height: 40,
-                                  child: CommonButton(
-                                      backgroundColor: isListEmpty.value
-                                          ? theme.scaffoldBackgroundColor
-                                          : theme.primaryColorDark,
-                                      textSize: 16,
-                                      onTap: () {
-                                        isListEmpty.value = !isListEmpty.value;
-                                      },
-                                      text: AppStrings.checkOut)),
+                              child: CommonButton(
+                                  borderRadius: 15,
+                                  backgroundColor: isListEmpty.value
+                                      ? theme.scaffoldBackgroundColor
+                                      : theme.primaryColorDark,
+                                  textSize: 16,
+                                  onTap: () {
+                                    isListEmpty.value = !isListEmpty.value;
+                                  },
+                                  text: AppStrings.checkOut),
                             );
                           }))
                 ],

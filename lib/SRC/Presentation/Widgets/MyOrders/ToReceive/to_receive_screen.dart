@@ -20,11 +20,11 @@ class ToReceivedScreen extends StatelessWidget {
       child: Scaffold(
         body: Column(
           children: [
-            10.y,
+            1.stB.y,
             const CustomAppBar(
               isHomePage: false,
             ),
-            15.y,
+            5.y,
             Expanded(
               child: ListView.builder(
                   itemCount: ToReceivedOrderData.ordersDetailsList.length,
@@ -123,7 +123,7 @@ class ToReceivedScreen extends StatelessWidget {
                                                 .statusOfOrder ==
                                             AppStrings.delivered
                                         ? SizedBox(
-                                            height: 30,
+                                            height: 35,
                                             width: size.width * 0.21,
                                             child: OutlineBorderButton(
                                               outlinedRadius: 10,
@@ -151,7 +151,8 @@ class ToReceivedScreen extends StatelessWidget {
                                                                     child: ClipRRect(
                                                                         borderRadius: BorderRadius.circular(10),
                                                                         child: Image.asset(
-                                                                          AppAssets.b1,
+                                                                          AppAssets
+                                                                              .b1,
                                                                           fit: BoxFit
                                                                               .cover,
                                                                           height:
@@ -239,18 +240,16 @@ class ToReceivedScreen extends StatelessWidget {
                                               },
                                             ),
                                           )
-                                        : SizedBox(
-                                            height: 30,
-                                            width: size.width * 0.2,
-                                            child: CommonButton(
-                                              onTap: () {
-                                                context.to(
-                                                    const ToReceivedOrderProgress());
-                                              },
-                                              text: AppStrings.track,
-                                              borderRadius: 8,
-                                              textSize: 14,
-                                            ))
+                                        : CommonButton(
+                                            height: 35,
+                                            onTap: () {
+                                              context.to(
+                                                  const ToReceivedOrderProgress());
+                                            },
+                                            text: AppStrings.track,
+                                            borderRadius: 8,
+                                            textSize: 14,
+                                          )
                                   ],
                                 )
                               ],

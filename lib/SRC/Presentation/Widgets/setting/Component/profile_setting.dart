@@ -1,3 +1,4 @@
+import 'package:tf_ecommerce/SRC/Application/Utils/Extensions/responsive_extension.dart';
 import 'package:tf_ecommerce/SRC/Presentation/Widgets/setting/Component/Tiles/profile_text_field.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
 
@@ -20,6 +21,7 @@ class ProfileSetting extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                1.stB.y,
                 AppText(
                   text: AppStrings.setting,
                   style: theme.textTheme.displayMedium,
@@ -48,7 +50,8 @@ class ProfileSetting extends StatelessWidget {
                                 color: theme.canvasColor)
                           ]),
                       child: const ClipOval(
-                        child: DisplayImage(imageAddress: AppAssets.profileImage),
+                        child:
+                            DisplayImage(imageAddress: AppAssets.profileImage),
                       ),
                     ),
                     Positioned(
@@ -85,13 +88,10 @@ class ProfileSetting extends StatelessWidget {
                 ),
                 Align(
                   alignment: Alignment.bottomCenter,
-                  child: SizedBox(
-                    height: 40,
-                    child: CommonButton(
-                        borderRadius: 10,
-                        onTap: () {},
-                        text: AppStrings.saveChanges),
-                  ),
+                  child: CommonButton(
+                      borderRadius: 10,
+                      onTap: () {},
+                      text: AppStrings.saveChanges),
                 )
               ],
             )),

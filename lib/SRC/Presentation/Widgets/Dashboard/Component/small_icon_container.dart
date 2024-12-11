@@ -62,7 +62,8 @@ class SmallIconContainer extends StatelessWidget {
                   ),
                   width: 10,
                   height: 10,
-                ))
+                ),
+              )
             : Container(),
       ],
     );

@@ -1,3 +1,4 @@
+import 'package:tf_ecommerce/SRC/Application/Utils/Extensions/responsive_extension.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
 
 class PasswordRecoveryCode extends StatelessWidget {
@@ -11,7 +12,7 @@ class PasswordRecoveryCode extends StatelessWidget {
         body: SingleChildScrollView(
       child: Stack(
         children: [
-          const Bubble(),
+          // const Bubble(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
@@ -41,7 +42,7 @@ class PasswordRecoveryCode extends StatelessWidget {
                   style: Theme.of(context).textTheme.displaySmall,
                 ),
                 20.y,
-                const FourDigitCodeInput(),
+                SizedBox(width: 150.w, child: const FourDigitCodeInput()),
                 SizedBox(
                   height: size.height * 0.16,
                 ),
@@ -52,7 +53,7 @@ class PasswordRecoveryCode extends StatelessWidget {
                       context.to(const SetupNewPassword());
                     },
                     text: AppStrings.sendAgain,
-                    backgroundColor: Theme.of(context).indicatorColor,
+                    backgroundColor: Theme.of(context).cardColor,
                     //isRecoveryButton: true,
                   ),
                 ),

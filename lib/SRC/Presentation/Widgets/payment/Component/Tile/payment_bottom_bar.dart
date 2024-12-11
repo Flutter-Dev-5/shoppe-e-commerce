@@ -34,25 +34,24 @@ class PaymentBottomBar extends StatelessWidget {
                 ),
               ),
               Flexible(
-                child: SizedBox(
-                    height: 40,
-                    child: CommonButton(
-                      onTap: () {
-                        showDialog(
-                          context: context,
-                          barrierColor: Colors.black.withOpacity(0.8),
-                          builder: (context) {
-                            return SuccessDialog(
-                              onConfirm: () {
-                                context.back();
-                              },
-                            );
+                child: CommonButton(
+                  borderRadius: 15,
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      barrierColor: Colors.black.withOpacity(0.8),
+                      builder: (context) {
+                        return SuccessDialog(
+                          onConfirm: () {
+                            context.back();
                           },
                         );
                       },
-                      text: AppStrings.pay,
-                    //  isLimitReached: true,
-                    )),
+                    );
+                  },
+                  text: AppStrings.pay,
+                  //  isLimitReached: true,
+                ),
               )
             ],
           ),

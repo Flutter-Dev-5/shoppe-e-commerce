@@ -18,9 +18,9 @@ class MyActivityProductCost extends StatelessWidget {
                 text: "${AppStrings.clothing} \$ 18300",
                 color: theme.primaryColorDark,
               ),
-              const SellingContainer(
+              SellingContainer(
                 text: "${AppStrings.lingers} \$ 27700",
-                color: Color(0xff9DEB44),
+                color: theme.cardColor,
               ),
             ],
           ),
