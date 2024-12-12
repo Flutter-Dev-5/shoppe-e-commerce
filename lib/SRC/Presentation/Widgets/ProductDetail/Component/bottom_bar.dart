@@ -42,16 +42,14 @@ class BottomBar extends StatelessWidget {
             5.x,
             Flexible(
                 child: CommonButton(
-                   // isLimitReached: true,
-                    height: 41,
+                    // isLimitReached: true,
+                    height: 45,
                     onTap: () {},
                     text: AppStrings.addToCart)),
             5.x,
             Flexible(
-                child: SizedBox(
-                    height: 40,
-                    child:
-                        CommonButton(onTap: () {}, text: AppStrings.buyNow))),
+                child: CommonButton(
+                    height: 45, onTap: () {}, text: AppStrings.buyNow)),
           ],
         ),
       ),

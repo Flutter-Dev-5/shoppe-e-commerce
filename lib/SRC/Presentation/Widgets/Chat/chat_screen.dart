@@ -1,3 +1,4 @@
+import 'package:tf_ecommerce/SRC/Application/Utils/Extensions/responsive_extension.dart';
 import 'package:tf_ecommerce/SRC/Presentation/Widgets/Chat/Component/Tiles/chat_app_bar.dart';
 import 'package:tf_ecommerce/SRC/exports.dart';
 
@@ -53,11 +54,11 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
               SliverToBoxAdapter(
                 child: SizedBox(
-                  height: size.height - 75,
+                  height: size.height - 110.h,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Flexible(
+                      Expanded(
                         child: ListView.builder(
                             itemCount: UserSelectedData.userSelectedData.length,
                             itemBuilder: (context, index) {
@@ -75,13 +76,13 @@ class _ChatScreenState extends State<ChatScreen> {
                             }),
                       ),
                       Container(
-                        height: 80,
+                        height: 80.h,
                         width: size.width,
                         color: theme.primaryColorDark.withOpacity(0.2),
                         child: Row(
                           children: [
                             SizedBox(
-                              height: 70,
+                              height: 70.h,
                               width: size.width / 1.3,
                               child: TextField(
                                 controller: TextEditingController(),
@@ -112,7 +113,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 ),
                                 5.x,
                                 const DisplayImage(
-                                  imageAddress:AppAssets.categoriesPNG,
+                                  imageAddress: AppAssets.categoriesPNG,
                                   imageHeight: 25,
                                   imageWidth: 25,
                                 )

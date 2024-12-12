@@ -25,13 +25,13 @@ class DiscountSelectorWidget extends StatelessWidget {
         children: [
           Container(
             height: 40,
-            width: size.width - 12,
+            width: size.width - 12.w,
             decoration: BoxDecoration(
                 color: theme.canvasColor,
                 borderRadius: BorderRadius.circular(8)),
           ),
           SizedBox(
-            width: size.width - 12,
+            width: size.width - 12.w,
             child: ValueListenableBuilder(
                 valueListenable: selectedDiscount,
                 builder: (context, selectedSnap, child) {

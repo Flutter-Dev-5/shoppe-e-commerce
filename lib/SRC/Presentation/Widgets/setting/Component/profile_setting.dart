@@ -51,7 +51,8 @@ class ProfileSetting extends StatelessWidget {
                                 color: theme.canvasColor)
                           ]),
                       child: const ClipOval(
-                        child: DisplayImage(imageAddress: AppAssets.profileImage),
+                        child:
+                            DisplayImage(imageAddress: AppAssets.profileImage),
                       ),
                     ),
                     Positioned(

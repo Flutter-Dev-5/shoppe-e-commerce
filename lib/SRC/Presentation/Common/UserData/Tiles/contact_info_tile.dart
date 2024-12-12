@@ -25,16 +25,12 @@ class ContactInfoTile extends StatelessWidget {
             controller: TextEditingController(),
             radius: 10,
           ),
-          10.y,
-          20.y,
-          SizedBox(
-            height: 50,
-            child: CommonButton(
-                onTap: () {
-                  context.back();
-                },
-                text: AppStrings.saveChanges),
-          ),
+          30.y,
+          CommonButton(
+              onTap: () {
+                context.back();
+              },
+              text: AppStrings.saveChanges),
           40.y,
         ],
       ),

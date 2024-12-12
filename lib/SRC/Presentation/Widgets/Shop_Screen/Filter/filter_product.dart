@@ -34,7 +34,7 @@ class FilterProduct extends StatelessWidget {
                 10.y,
                 SelectProductCategoryContainer(),
                 10.y,
-                const SizedBox(height: 60, child: ButtonsOfFilter()),
+                const ButtonsOfFilter(),
               ],
             ),
           ),

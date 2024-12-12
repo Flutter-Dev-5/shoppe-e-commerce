@@ -22,7 +22,7 @@ class _FlashSaleDetailState extends State<FlashSaleDetail> {
 
     return Stack(
       children: [
-        const Bubble(),
+        // const Bubble(),
         NotificationListener<ScrollNotification>(
           onNotification: (scrollNotification) {
             if (scrollNotification is ScrollUpdateNotification) {
@@ -58,7 +58,7 @@ class _FlashSaleDetailState extends State<FlashSaleDetail> {
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Column(
                         children: [
-                          60.y,
+                          50.y,
                           const FlashSaleHeading(
                             isDetailScreen: true,
                           ),

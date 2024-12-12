@@ -31,6 +31,11 @@ class RecentlyViewedOfRecentScreen extends StatelessWidget {
                       child: Card(
                         color: theme.scaffoldBackgroundColor,
                         child: SfCalendar(
+                          selectionDecoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Theme.of(context).primaryColorDark,
+                              )),
                           headerDateFormat: "LLLL",
                           headerStyle: CalendarHeaderStyle(
                               backgroundColor: theme.scaffoldBackgroundColor,
@@ -40,7 +45,7 @@ class RecentlyViewedOfRecentScreen extends StatelessWidget {
                           todayHighlightColor: theme.primaryColorDark,
                           view: CalendarView.month,
                           monthViewSettings: MonthViewSettings(
-                              numberOfWeeksInView: 5,
+                              numberOfWeeksInView: 4,
                               monthCellStyle: MonthCellStyle(
                                   todayBackgroundColor: theme.canvasColor,
                                   backgroundColor: theme.canvasColor),
@@ -50,13 +55,14 @@ class RecentlyViewedOfRecentScreen extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                        bottom: 0,
-                        right: size.width / 2.5,
-                        child: ArrowUp(
-                          onTap: () {
-                            showContainer.value = false;
-                          },
-                        )),
+                      bottom: 0,
+                      right: size.width / 2.5,
+                      child: ArrowUp(
+                        onTap: () {
+                          showContainer.value = false;
+                        },
+                      ),
+                    ),
                   ],
                 ),
               )
