@@ -1,7 +1,7 @@
 import 'package:tf_ecommerce/SRC/exports.dart';
 
 class ContactInfoTile extends StatelessWidget {
-  ContactInfoTile({super.key});
+  const ContactInfoTile({super.key});
 
   @override
   Widget build(BuildContext context) {

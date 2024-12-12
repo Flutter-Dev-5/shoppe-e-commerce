@@ -39,7 +39,7 @@ class _CreateAccountState extends State<CreateAccount> {
         print("code>>> ${code}");
 
 
-        VipsController().sendCode('https://dialog.modish.no/api/user/vippsMember/${code["code"]}?client_token=${Data().clientId}');
+        VipsController().sendCode('https://dialog.modish.no/api/user/vippsMember/${code["code"]}?client_token=${Data().clientId}&redirect_uri=$redirectUriPrd');
 
       }
       if (query.contains("resume_uri")) {
@@ -133,10 +133,13 @@ class _CreateAccountState extends State<CreateAccount> {
 
 
     print("urlllllllllloginnn");
-    print(loginUrl);
+
+    String logUri=loginUrl;
+    print(logUri);
+
     await launchUrl(
-      Uri.parse(loginUrl),
-      mode: LaunchMode.inAppBrowserView,
+      Uri.parse(logUri),
+      mode: LaunchMode.externalNonBrowserApplication,
     );
 
   }

@@ -1,9 +1,6 @@
-
 import 'package:tf_ecommerce/SRC/Data/Users/user_data.dart';
 
 class Data with UserData {
-
-
   Data._();
 
   static final Data _instance = Data._();
@@ -12,10 +9,6 @@ class Data with UserData {
   }
 
   init() {
-
-    clientId="e39aa632-a9ca-4ba8-8417-74fac260917d";
-
+    clientId = "DZHFv0oJCMxUgvlFwqxtlTsQqkq8kAlJBrp6lK74MnFWfsQU2X3IOYJQhCeq";
   }
-
-
 }

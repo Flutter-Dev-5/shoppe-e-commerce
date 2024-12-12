@@ -16,6 +16,8 @@ class VipsController {
   Future sendCode(url) async {
     try {
       vippsLoading.value = 1;
+      print("urll------");
+      print(url);
 
       await VippsRepo.sendCode(url).then(
               (value,) async {
